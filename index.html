@@ -5,7 +5,7 @@
     <title>Главная | Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
       <ul class="navigation-list-left">
         <li class="navigation-item"><a class="navigation-link-logo"><img src="#" alt="Мини Логотип Седона"></a></li>
@@ -32,14 +32,15 @@
       </ul>
     </nav>
     </header>
-    <main class="main-index">
+    <main class="main-index" data-test="main">
+      <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Седона</h1>
       <img class="logo" src="#" alt="Логотип Седона">
-
+      </section>
       <h2 class="index-title"> Седона — небольшой городок в Аризоне,
           заслуживающий большего! </h2>
           <p> Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон! </p>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h3 class="visually-hidden"> Преимущества Седоны</h3>
         <ul class="advantages-list">
           <li class="advantages-item"><h4>Настоящий городок</h4>
@@ -85,23 +86,23 @@
 
         </ul>
       </section>
-      <section class="hotel-search">
+      <section class="hotel-search" data-test="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search-link" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
 
       </section>
-
-    </main>
-    <footer class="page-footer">
-      <section class="footer-newsletter">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="footer-newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="newsletter-email" placeholder="Ваш e-mail">
-          <button class="newsletter-form-submit-button">Подписаться</button>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" name="subscribe-email" placeholder="Ваш e-mail">
+          <button class="subscribe-form-submit-button">Подписаться</button>
         </form>
       </section>
+    </main>
+    <footer class="page-footer" data-test="footer">
+
       <section class="footer-social">
         <h2>Социальные сети</h2>
         <ul class="footer-social-list">

@@ -5,7 +5,7 @@
     <title> Гостиницы | Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
       <ul class="navigation-list-left">
         <li class="navigation-item"><a class="navigation-link-logo" href="https://htmlacademy.ru/"><img src="#" alt="Мини Логотип Седона"></a></li>
@@ -32,8 +32,8 @@
       </ul>
     </nav>
     </header>
-    <main class="main-catalog">
-      <header class="main-catalog-header">
+    <main class="main-catalog" data-test="main">
+      <section class="catalog-filter" data-test=" filter">
         <h1>Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -89,8 +89,8 @@
           <button class="filter-submit-button" type="submit">Применить</button>
           <input type="reset" name="reset" value="Сбросить">
         </form>
-      </header>
-      <section class="catalog-hotels">
+      </section>
+      <section class="catalog-hotels" data-test="catalog">
         <h2>Найдено гостиниц: 38</h2>
         <select class="hotels-filter-selector">
           <option value="Сначала дешевые" selected>
@@ -203,21 +203,21 @@
           </li>
         </ul>
       </section>
-
+      <section class="subscribe" data-test="subscribe">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" name="subscribe-email" placeholder="Ваш e-mail">
+          <button class="subscribe-form-submit-button">Подписаться</button>
+        </form>
+      </section>
 
 
     </main>
 
 
-    <footer class="page-footer">
-      <section class="footer-newsletter">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="footer-newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="newsletter-email" placeholder="Ваш e-mail">
-          <button class="newsletter-form-submit-button">Подписаться</button>
-        </form>
-      </section>
+    <footer class="page-footer" data-test="footer">
+
       <section class="footer-social">
         <h2>Социальные сети</h2>
         <ul class="footer-social-list">
