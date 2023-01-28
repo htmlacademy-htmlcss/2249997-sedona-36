@@ -8,7 +8,7 @@
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <ul class="navigation-list-left">
-         <li class="navigation-item"><a class="navigation-link-logo"><img src="#" alt="Мини Логотип Седона"></a></li>
+         <li class="navigation-item"><a class="navigation-link-logo"><img src="images/header/header-logo.svg" height="70.05px" width="140px" alt="Мини Логотип Седона"></a></li>
           <li class="navigation-item"><a class="navigation-link-index navigation-link-current" href="#">Главная</a></li>
           <li  class="navigation-item"><a class="navigation-link-about" href="#">О седоне</a></li>
           <li class="navigation-item"><a class="navigation-link-hotels" href="catalog.html">Гостиницы</a></li>
@@ -17,12 +17,13 @@
       <ul class="navigation-list-right">
         <li class="navigation-item">
           <button type="button" class="navigation-link-search">
-            <span class="visually-hidden">Поиск</span>
+            <img src="/images/header/header-search.svg" alt="Поиск" width="18px" height="18px">
           </button>
         </li>
         <li class="navigation-item">
             <button type="button" class="navigation-link-like">
-              <span class="visually-hidden">Мне нравится</span>
+              <img src="/images/header/header-heart.svg" alt="Иконка(мне нравится)" width="18px" height="17px">
+              <img src="/images/header/header-heart-numbers.svg" alt="Счетчик лайков" width="20px" height="20px">
             </button>
         </li>
         <li class="navigation-item">
@@ -37,18 +38,21 @@
       <section class="catalog-filter" data-test=" filter">
         <h2 class="visually-hidden">Фильтр для подбора гостиниц</h2>
         <p>Гостиницы Седоны</p>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <img src="#" alt="Значок домика(Главная)">
+              <img src="/images/catalog/catalog-filter-icon-house.svg" alt="Значок домика(Главная)" width="12px" height="12px">
             </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <img src="/images/catalog/catalog-filter-icon-arrow.svg" alt="Значок стрелки" width="6.39px" height="9.94px">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">
-              Каталог
+              Гостиницы
             </a>
           </li>
-        </ul>
+        </ol>
         <form class="filter-hotels" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-category">
             <legend>Инфраструктура:</legend>
@@ -221,13 +225,19 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy"><span class="visually-hidden">Vkontakte</span></a>
+            <a class="button" href="https://vk.com/htmlacademy">
+              <img src="/images/footer/footer-social-icon-vk.svg" alt="Вконтакте" width="24px" height="14px">
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="newsletter-button" href="https://t.me/htmlacademy "><span class="visually-hidden">Telegram</span></a>
+            <a class="newsletter-button" href="https://t.me/htmlacademy ">
+              <img src="/images/footer/footer-social-icon-tg.svg" alt="Телеграмм" width="18px" height="15.1px">
+            </a>
           </li>
           <li class="footer-social-item">
-            <a class="newsletter-button" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span></a>
+            <a class="newsletter-button" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="/images/footer/footer-social-icon-youtube.svg" alt="Ютьюб" width="22px" height="17px">
+            </a>
           </li>
         </ul>
       </section>
@@ -236,7 +246,7 @@
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <a class="html-academy-link" href="https://htmlacademy.ru/">
-        <img src="#" alt="Логитп HTML-academy">
+        <img src="/images/footer/footer-icon-HTML.svg" alt="Логитп HTML-academy">
       </a>
     </footer>
   </body>
