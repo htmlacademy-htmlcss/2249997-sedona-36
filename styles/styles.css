@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2");
+  font-weight: 400;
+  font-style:normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2");
+  font-weight: 700;
+  font-style:normal;
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: white;
+}
+.navigation-list-left a {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  color: black;
+  text-decoration: none;
+  padding: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.navigation-list-right .navigation-link-sign-in {
+  background-color: #756157;
+  color: white;
+  text-align: center;
+  vertical-align:middle;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 8px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.hero {
+  background-color:aliceblue;
+  background-image: url("../images/index/index-hero-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+}
+.hero-logo-text {
+  margin: 371px;
+  margin-top: 51px;
+  margin-bottom: 82px;
+}
