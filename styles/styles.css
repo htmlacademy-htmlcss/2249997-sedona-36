@@ -133,4 +133,52 @@ body {
   padding: 50px;
   padding-top: 8px;
   padding-bottom: 8px;
+  font-weight: 700;
+}
+.subscribe {
+  background-color: rgb(173, 175, 177);
+  background-image: url("../images/index/index-subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.subscribe-text-1 {
+  color: white;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: left;
+  vertical-align: top;
+}
+.subscribe-text-2 {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: top;
+}
+.subscribe-form-submit-button {
+  background-color: #82B3D3;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: center;
+  padding: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+.page-footer {
+  background-color: white;
+  font-weight: 400;
+}
+
+.phone a {
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: black;
 }
