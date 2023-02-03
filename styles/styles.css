@@ -59,6 +59,7 @@ body {
   line-height: 36px;
   text-align: center;
   vertical-align: top;
+  text-transform: uppercase;
 
 }
 .advantages-title-2 {
@@ -67,4 +68,69 @@ body {
   text-align: center;
   vertical-align: top;
 
+}
+.advantages-item h3 {
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+}
+.advantages-item p {
+  text-align: center;
+  vertical-align: top;
+  font-weight: 400;
+}
+.advantages-list li:first-child {
+  background-color: #82B3D3;
+
+  color: white;
+}
+.advantages-list li:nth-child(3) {
+  background-color: #83B3D31F;
+
+}
+.advantages-list li:nth-child(4) {
+  background-color: #83B3D333;
+
+}
+.advantages-list li:nth-child(5) {
+  background-color: #83B3D31F;
+
+}
+.advantages-list li:nth-child(7) {
+  background-color: #82B3D3;
+
+}
+.advantages-list li:nth-child(9) {
+  background-color: #83B3D31F;
+
+}
+.advantages-list li:nth-child(11) {
+  background-color: #83B3D31F;
+
+}
+.hotel-search-title-1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: top;
+}
+.hotel-search-title-2 {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+}
+.hotel-search-link {
+  background-color: #756157;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
