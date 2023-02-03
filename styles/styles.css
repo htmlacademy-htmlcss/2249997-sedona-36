@@ -15,6 +15,7 @@
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   line-height: 21px;
   color: #333333;
   background-color: white;
@@ -47,10 +48,23 @@ body {
   background-image: url("../images/index/index-hero-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-
 }
 .hero-logo-text {
   margin: 371px;
   margin-top: 51px;
   margin-bottom: 82px;
+}
+.advantages-title-1 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: top;
+
+}
+.advantages-title-2 {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+
 }
