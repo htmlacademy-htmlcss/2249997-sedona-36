@@ -12,7 +12,9 @@
   font-style:normal;
   font-display: swap;
 }
-
+.visually-hidden {
+  display: none;
+}
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -266,9 +268,7 @@ body {
   vertical-align: top;
 
 }
-.visually-hidden {
-  display: none;
-}
+
 .catalog-hotels-filter-selector option {
   font-weight: 400;
   font-size: 18px;
