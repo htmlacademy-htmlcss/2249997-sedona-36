@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title> Гостиницы | Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
@@ -22,13 +23,13 @@
         </li>
         <li class="navigation-item">
             <button type="button" class="navigation-link-like">
-              <img src="images/header/header-heart.svg" alt="Иконка(мне нравится)" width="18" height="17">
-              <img src="images/header/header-heart-numbers.svg" alt="Счетчик лайков" width="20" height="20">
+              <img src="images/header/header-heart.svg" alt="Счетчик лайков" width="18" height="17">
+              <span class="visually-hidden"> 12 </span>
             </button>
         </li>
         <li class="navigation-item">
           <button type="button" class="navigation-link-sign-in">
-            <span class="visually-hidden">Вход</span>
+            <span class="visually-hidden">Хочу сюда!</span>
           </button>
           </li>
       </ul>
@@ -223,10 +224,10 @@
             </li>
           </ol>
       </section>
-      <section class="subscribe" data-test="subscribe">
+      <section class="subscribe-catalog" data-test="subscribe">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="subscribe-text-1">Подпишитесь на рассылку</p>
-        <p class="subscribe-text-2">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-catalog-text-1">Подпишитесь на рассылку</p>
+        <p class="subscribe-catalog-text-2">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" name="subscribe-email" placeholder="Ваш e-mail">
           <button class="subscribe-form-submit-button">Подписаться</button>
