@@ -50,9 +50,10 @@ body {
 .hero {
   background-color:aliceblue;
   background-image: url("../images/index/index-hero-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
+
 .hero-logo-text {
   margin: 371px;
   margin-top: 51px;
