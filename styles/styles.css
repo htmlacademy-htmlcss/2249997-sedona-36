@@ -25,6 +25,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+ul {
+  list-style: none;
+}
+ol {
+  list-style: none;
+}
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
