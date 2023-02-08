@@ -498,21 +498,52 @@ filter-category-infrastructure {
   text-align: center;
   vertical-align: top;
 }
-.pagination-item a {
-  text-decoration: none;
-  color: white;
+.pagination-list {
+  display: flex;
+  width: 1060px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.pagination-item {
+  width: 60px;
+}
+.pagination-item:not(:first-of-type) {
+  margin-left: 8px;
+}
+.pagination-item  {
+
   background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   vertical-align: center;
 }
+.pagination-item a {
+  text-decoration: none;
+  color: white;
+}
 
-.pagination-item-link-current {
+.pagination-current {
   background-color: #F2F2F2;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   vertical-align: center;
+  color: black;
+}
+.pagination-dotted  {
+  background-color: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: center;
+  color: black;
+}
+.pagination-current a {
+  text-decoration: none;
+  color: black;
+}
+.pagination-dotted a {
+  text-decoration: none;
   color: black;
 }
