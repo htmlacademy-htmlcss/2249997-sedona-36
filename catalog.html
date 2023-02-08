@@ -57,7 +57,7 @@
           </li>
         </ol>
         <form class="filter-hotels" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="filter-category">
+          <fieldset class="filter-category-infrastructure">
             <legend>Инфраструктура:</legend>
               <ul class="infrastructure-list">
                 <li class="infrastructure-item">
@@ -74,7 +74,7 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="filter-category">
+          <fieldset class="filter-category-type-of-housing">
             <legend>Тип жилья::</legend>
               <ul class="type-of-housing-list">
                 <li class="type-of-housing-list-item">
@@ -91,12 +91,14 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="filter-category">
+          <fieldset class="filter-category-price-range">
             <legend>Стоимость, ₽::</legend>
             <input type="range" step="10" min="0" max="9000">
           </fieldset>
+          <div class="filter-category-buttons">
           <button class="filter-submit-button" type="submit">Применить</button>
           <input type="reset" name="reset" value="Сбросить">
+        </div>
         </form>
       </section>
       <section class="catalog-hotels" data-test="catalog">

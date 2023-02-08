@@ -349,6 +349,30 @@ body {
   text-align: left;
   vertical-align: top;
 }
+.filter-hotels {
+  display: flex;
+  width: 1060px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+filter-category-infrastructure {
+  width: 150px;
+  margin-left: 70px;
+}
+.filter-category-type-of-housing {
+  width: 150px;
+  margin-left: 70px;
+}
+.filter-category-price-range {
+  width: 288px;
+  margin-left: 140px;
+}
+.filter-category-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 191px;
+  margin-left: 70px;
+}
 .filter-hotels legend {
   font-size: 20px;
   line-height: 24px;
