@@ -227,14 +227,26 @@ body {
   padding-bottom: 8px;
   font-weight: 700;
 }
-.subscribe {
+.subscribe-index {
   background-color: rgb(173, 175, 177);
   background-image: url("../images/index/index-subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
+}
+.subscribe-catalog {
+
+  width: 1200px;
+
+}
+.subscribe-information {
+  width: 684px;
   display: flex;
   flex-direction: column;
+  margin-left: 258px;
+  margin-right: 258px;
+
+
 }
 .subscribe-text-1 {
   color: white;
