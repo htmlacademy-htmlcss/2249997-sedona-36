@@ -307,6 +307,21 @@ body {
   text-align: center;
   vertical-align: top;
 }
+.catalog-hotels-display {
+  width: 1200px;
+  display: flex;
+  margin-left: 70px;
+
+}
+.catalog-hotels-filter-selector {
+  width: 292px;
+  margin-left: 200px;
+}
+.catalog-hotels-filter-icons {
+  width: 160px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
 .catalog-filter {
   background-color: burlywood;
   background-image: url(../images/catalog/catalog-filter-background.jpg);
