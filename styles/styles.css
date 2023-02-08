@@ -194,6 +194,12 @@ body {
   background-color: #83B3D31F;
   width: 400px;
 }
+.hotel-search {
+  width: 1200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
 .hotel-search-title-1 {
   font-size: 30px;
   text-transform: uppercase;
@@ -226,6 +232,9 @@ body {
   background-image: url("../images/index/index-subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 .subscribe-text-1 {
   color: white;
