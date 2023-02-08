@@ -31,6 +31,9 @@ ul {
 ol {
   list-style: none;
 }
+html {
+  height: 100%;
+}
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -38,6 +41,12 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.main-container{
+  flex-grow: 1;
 }
 .navigation-list-left a {
   font-size: 20px;
