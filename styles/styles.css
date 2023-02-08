@@ -335,6 +335,13 @@ body {
   text-align: left;
   vertical-align: top;
 }
+.breadcrumbs {
+  display: flex;
+  width: 300px;
+}
+.breadcrumbs-item:not(:first-of-type) {
+  margin-left: 10px;
+}
 .breadcrumbs-link-hotel {
   font-size: 16px;
   line-height: 21px;
