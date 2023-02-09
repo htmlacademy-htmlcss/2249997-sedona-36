@@ -13,7 +13,26 @@
   font-display: swap;
 }
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+ol {
+  list-style: none;
+}
+html {
+  height: 100%;
 }
 body {
   font-family: "PT Sans", sans-serif;
@@ -22,7 +41,48 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: white;
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+.main-container{
+  flex-grow: 1;
+}
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list-left {
+  margin: 0;
+  padding: 0;
+  width: 720px;
+}
+.navigation-list-right {
+  margin: 0;
+  padding: 0;
+  width: 312px;
+  margin-left: auto;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-link-logo {
+  display: block;
+  margin: 0 auto;
+}
+.advantages-titles {
+  width: 1200px;
+}
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .navigation-list-left a {
   font-size: 20px;
   line-height: 24px;
@@ -50,13 +110,18 @@ body {
 .hero {
   background-color:aliceblue;
   background-image: url("../images/index/index-hero-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
+
 .hero-logo-text {
   margin: 371px;
   margin-top: 51px;
   margin-bottom: 82px;
+}
+.hero-arrow {
+  display:block;
+
 }
 .advantages-title-1 {
   font-size: 30px;
@@ -83,34 +148,57 @@ body {
   vertical-align: top;
   font-weight: 400;
 }
+
 .advantages-list li:first-child {
   background-color: #82B3D3;
-
   color: white;
+  width: 400px;
+}
+.advantages-list li:nth-child(2) {
+  background-color: #83B3D31F;
+  width: 800px;
 }
 .advantages-list li:nth-child(3) {
   background-color: #83B3D31F;
-
+  width: 400px;
 }
 .advantages-list li:nth-child(4) {
   background-color: #83B3D333;
-
+  width: 400px;
 }
 .advantages-list li:nth-child(5) {
   background-color: #83B3D31F;
-
+  width: 400px;
+}
+.advantages-list li:nth-child(6) {
+  background-color: #83B3D31F;
+  width: 800px;
 }
 .advantages-list li:nth-child(7) {
   background-color: #82B3D3;
-
+  width: 400px;
+}
+.advantages-list li:nth-child(8) {
+  background-color: white;
+  width: 1200px;
 }
 .advantages-list li:nth-child(9) {
   background-color: #83B3D31F;
-
+  width: 400px;
+}
+.advantages-list li:nth-child(10) {
+  background-color: white;
+  width: 400px;
 }
 .advantages-list li:nth-child(11) {
   background-color: #83B3D31F;
-
+  width: 400px;
+}
+.hotel-search {
+  width: 1200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 .hotel-search-title-1 {
   font-size: 30px;
@@ -139,11 +227,26 @@ body {
   padding-bottom: 8px;
   font-weight: 700;
 }
-.subscribe {
+.subscribe-index {
   background-color: rgb(173, 175, 177);
   background-image: url("../images/index/index-subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 1200px;
+}
+.subscribe-catalog {
+
+  width: 1200px;
+
+}
+.subscribe-information {
+  width: 684px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 258px;
+  margin-right: 258px;
+
+
 }
 .subscribe-text-1 {
   color: white;
@@ -178,7 +281,21 @@ body {
   background-color: white;
   font-weight: 400;
 }
-
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-social {
+  width: 142px;
+  display: flex;
+  margin-left: 70px;
+}
+.html-academy-link {
+  width: 115px;
+  margin-right: 70px;
+}
 .phone a {
   text-align: center;
   font-size: 40px;
@@ -202,10 +319,25 @@ body {
   text-align: center;
   vertical-align: top;
 }
+.catalog-hotels-display {
+  width: 1200px;
+  display: flex;
+  margin-left: 70px;
+
+}
+.catalog-hotels-filter-selector {
+  width: 292px;
+  margin-left: 200px;
+}
+.catalog-hotels-filter-icons {
+  width: 160px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
 .catalog-filter {
   background-color: burlywood;
   background-image: url(../images/catalog/catalog-filter-background.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
 }
@@ -215,12 +347,43 @@ body {
   text-align: left;
   vertical-align: top;
 }
+.breadcrumbs {
+  display: flex;
+  width: 300px;
+}
+.breadcrumbs-item:not(:first-of-type) {
+  margin-left: 10px;
+}
 .breadcrumbs-link-hotel {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
   text-align: left;
   vertical-align: top;
+}
+.filter-hotels {
+  display: flex;
+  width: 1060px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+filter-category-infrastructure {
+  width: 150px;
+  margin-left: 70px;
+}
+.filter-category-type-of-housing {
+  width: 150px;
+  margin-left: 70px;
+}
+.filter-category-price-range {
+  width: 288px;
+  margin-left: 140px;
+}
+.filter-category-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 191px;
+  margin-left: 70px;
 }
 .filter-hotels legend {
   font-size: 20px;
@@ -275,6 +438,19 @@ body {
   line-height: 21px;
   text-align: left;
   vertical-align: top;
+}
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.hotel-card {
+  width: 340px;
+}
+.hotel-card:not(:first-of-type):not(:nth-of-type(4)) {
+  margin-left: 20px;
 }
 .hotel-card-link {
   color: black;
@@ -334,21 +510,52 @@ body {
   text-align: center;
   vertical-align: top;
 }
-.pagination-item a {
-  text-decoration: none;
-  color: white;
+.pagination-list {
+  display: flex;
+  width: 1060px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.pagination-item {
+  width: 60px;
+}
+.pagination-item:not(:first-of-type) {
+  margin-left: 8px;
+}
+.pagination-item  {
+
   background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   vertical-align: center;
 }
+.pagination-item a {
+  text-decoration: none;
+  color: white;
+}
 
-.pagination-item-link-current {
+.pagination-current {
   background-color: #F2F2F2;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   vertical-align: center;
+  color: black;
+}
+.pagination-dotted  {
+  background-color: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: center;
+  color: black;
+}
+.pagination-current a {
+  text-decoration: none;
+  color: black;
+}
+.pagination-dotted a {
+  text-decoration: none;
   color: black;
 }
