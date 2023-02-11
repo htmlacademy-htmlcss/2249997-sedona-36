@@ -178,6 +178,10 @@ body {
   display: block;
   margin: 0 auto;
 }
+.advantages-icon {
+  display: block;
+  margin: 0 auto;
+}
 .advantages-list li:first-child {
   background-color: #82B3D3;
   color: white;
