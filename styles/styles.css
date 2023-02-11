@@ -166,17 +166,23 @@ body {
   text-transform: uppercase;
   text-align: center;
   vertical-align: top;
+  margin: 0;
 }
 .advantages-item p {
   text-align: center;
   vertical-align: top;
   font-weight: 400;
+  margin: 0;
 }
-
+.devide-line {
+  display: block;
+  margin: 0 auto;
+}
 .advantages-list li:first-child {
   background-color: #82B3D3;
   color: white;
   width: 400px;
+
 }
 .advantages-list li:nth-child(2) {
   background-color: #83B3D31F;
