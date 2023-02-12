@@ -417,6 +417,8 @@ body {
   text-transform: uppercase;
   text-align: left;
   vertical-align: top;
+  margin: 0;
+  padding: 0 140px 20px;
 }
 .subscribe-catalog-text-2 {
   color: #333333;
@@ -425,6 +427,8 @@ body {
   line-height: 26px;
   text-align: center;
   vertical-align: top;
+  margin: 0;
+  padding: 0 104px 54px;
 }
 
 .catalog-hotels-sorting {
