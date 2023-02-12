@@ -453,10 +453,15 @@ body {
   line-height: 78px;
   text-align: left;
   vertical-align: top;
+  margin: 0;
+  padding: 35px 70px 8px;
 }
 .breadcrumbs {
   display: flex;
   width: 300px;
+  margin: 0;
+  padding-left: 70px;
+  padding-bottom: 40px;
 }
 .breadcrumbs-item:not(:first-of-type) {
   margin-left: 10px;
@@ -471,8 +476,9 @@ body {
 .filter-hotels {
   display: flex;
   width: 1060px;
-  margin-left: 70px;
-  margin-right: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
 }
 filter-category-infrastructure {
   width: 150px;
