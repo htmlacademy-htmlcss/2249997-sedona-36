@@ -426,20 +426,34 @@ body {
   text-align: center;
   vertical-align: top;
 }
-.catalog-hotels-display {
+
+.catalog-hotels-sorting {
   width: 1200px;
   display: flex;
   margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.catalog-hotels-display .catalog-hotels-text {
+  margin: 0;
+  padding: 0;
 
 }
 .catalog-hotels-filter-selector {
   width: 292px;
+  height: 49px;
   margin-left: 200px;
 }
 .catalog-hotels-filter-icons {
   width: 160px;
   margin-right: 70px;
   margin-left: 70px;
+}
+
+.catalog-hotels-filter-icons a:not(:first-of-type){
+
 }
 .catalog-filter {
   background-color: burlywood;

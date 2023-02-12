@@ -96,35 +96,37 @@
             <input type="range" step="10" min="0" max="9000">
           </fieldset>
           <div class="filter-category-buttons">
-            <button class="filter-submit-button" type="submit">Применить</button>
-            <input type="reset" name="reset" value="Сбросить">
-          </div>
+          <button class="filter-submit-button" type="submit">Применить</button>
+          <input type="reset" name="reset" value="Сбросить">
+        </div>
         </form>
       </section>
       <section class="catalog-hotels" data-test="catalog">
         <h2 class="visually-hidden">Раздел с результатами фильтрации гостиниц</h2>
-        <div class="catalog-hotels-display">
-        <p class="catalog-hotels-text">Найдено гостиниц: 38</p>
-        <select class="catalog-hotels-filter-selector">
-          <option value="Сначала дешевые" selected>
-            Сначала дешевые
-          </option>
-          <option value="Сначала дорогие">
-            Сначала дорогие
-          </option>
-        </select>
-        <div class="catalog-hotels-filter-icons">
-        <a class="hotels-visual-display-of-page-button current-button" href="#">
-          <img src="images/catalog/catalog-sorting-icon-cards-current.svg" alt="Отобразить в виде карточек" width="48" height="48">
-        </a>
-        <a class="hotels-visual-display-of-page-button" href="#">
-          <img src="images/catalog/catalog-sorting-icon-slides.svg" alt="Отобразить в виде слайдов" width="48" height="48">
-        </a>
-        <a class="hotels-visual-display-of-page-button" href="#">
-          <img src="images/catalog/catalog-sorting-icon-list.svg" alt="Отобразить в виде списка" width="48" height="48">
-        </a>
-      </div>
-      </div>
+        <div class="catalog-hotels-sorting">
+          <div class="catalog-hotels-display">
+            <p class="catalog-hotels-text">Найдено гостиниц: 38</p>
+          </div>
+          <select class="catalog-hotels-filter-selector">
+            <option value="Сначала дешевые" selected>
+              Сначала дешевые
+            </option>
+            <option value="Сначала дорогие">
+              Сначала дорогие
+            </option>
+          </select>
+          <div class="catalog-hotels-filter-icons">
+            <a class="hotels-visual-display-of-page-button current-button" href="#">
+              <img src="images/catalog/catalog-sorting-icon-cards-current.svg" alt="Отобразить в виде карточек" width="48" height="48">
+            </a>
+            <a class="hotels-visual-display-of-page-button" href="#">
+              <img src="images/catalog/catalog-sorting-icon-slides.svg" alt="Отобразить в виде слайдов" width="48" height="48">
+            </a>
+            <a class="hotels-visual-display-of-page-button" href="#">
+              <img src="images/catalog/catalog-sorting-icon-list.svg" alt="Отобразить в виде списка" width="48" height="48">
+            </a>
+          </div>
+        </div>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
