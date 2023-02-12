@@ -271,12 +271,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+.hotel-search-style {
+  padding: 96px 304px;
+}
 .hotel-search-title-1 {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
   line-height: 36px;
   vertical-align: top;
+  margin: 0;
+  padding-bottom: 20px;
 }
 .hotel-search-title-2 {
   font-size: 22px;
@@ -284,19 +289,22 @@ body {
   font-weight: 400;
   text-align: center;
   vertical-align: top;
+  margin: 0;
+  padding-bottom: 54px;
 }
 .hotel-search-link {
   background-color: #756157;
   text-transform: uppercase;
   color: white;
+  display: block;
   text-decoration: none;
   font-size: 20px;
   text-align: center;
   vertical-align: middle;
-  padding: 50px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 0;
   font-weight: 700;
+  width: 376px;
+  margin: 0 auto;
 }
 .subscribe-index {
   background-color: rgb(173, 175, 177);
@@ -313,8 +321,7 @@ body {
   width: 684px;
   display: flex;
   flex-direction: column;
-  margin-left: 258px;
-  margin-right: 258px;
+  padding: 96px 258px 104px;
 }
 
 .subscribe-text-1 {
@@ -322,8 +329,10 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   vertical-align: top;
+  margin: 0;
+  padding: 0 140px 20px;
 }
 .subscribe-text-2 {
   color: white;
@@ -332,7 +341,10 @@ body {
   line-height: 26px;
   text-align: center;
   vertical-align: top;
+  margin: 0;
+  padding: 0 104px 54px;
 }
+
 .subscribe-form-submit-button {
   background-color: #82B3D3;
   color: white;
@@ -359,7 +371,18 @@ body {
 .footer-social {
   width: 142px;
   display: flex;
-  margin-left: 70px;
+  padding-top: 45px;
+  padding-left: 70px;
+  padding-bottom: 35px;
+
+}
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.footer-social-item {
+  padding: 13px 12px;
 }
 .html-academy-link {
   width: 115px;
