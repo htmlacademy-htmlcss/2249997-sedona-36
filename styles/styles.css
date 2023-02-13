@@ -468,7 +468,11 @@ button {
   margin-right: 70px;
   margin-left: 70px;
 }
-
+.catalog-hotels-filter-icons a{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 .catalog-hotels-filter-icons a:not(:first-of-type){
 
 }
