@@ -25,12 +25,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-ul {
-  list-style: none;
-}
-ol {
-  list-style: none;
-}
 html {
   height: 100%;
 }
@@ -59,6 +53,7 @@ button {
   margin: 0 auto;
   display: flex;
 
+
 }
 .navigation-list-left {
   margin: 0;
@@ -66,6 +61,7 @@ button {
   width: 720px;
   display: flex;
   margin-left: 70px;
+  list-style: none;
 }
 .navigation-list-right {
   margin: 0;
@@ -74,6 +70,7 @@ button {
   margin-left: auto;
   margin-right: 70px;
   display: flex;
+  list-style: none;
 }
 .page-container {
   width: 1200px;
@@ -94,6 +91,7 @@ button {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .navigation-list-left a:not(.navigation-link-logo) {
@@ -181,6 +179,9 @@ button {
   vertical-align: top;
   font-weight: 400;
   margin: 0;
+}
+advantages-item img {
+  display: block;
 }
 .devide-line {
   display: block;
@@ -359,6 +360,22 @@ button {
 }
 .subscribe-form {
   margin: 0 auto;
+  display: flex;
+
+}
+.subscribe-form input {
+  width: 426px;
+  margin: 0;
+  padding-top: 14px;
+  padding-left: 20px;
+  padding-bottom: 14px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: center;
+
 }
 .subscribe-form-submit-button {
   background-color: #82B3D3;
@@ -372,6 +389,7 @@ button {
   padding-top: 8px;
   padding-bottom: 8px;
   font-weight: 700;
+  border: none;
 }
 .page-footer {
   background-color: white;
@@ -395,6 +413,7 @@ button {
   margin: 0;
   padding: 0;
   display: flex;
+  list-style: none;
 }
 .footer-social-item a {
   padding: 13px 12px;
@@ -497,6 +516,7 @@ button {
   margin: 0;
   padding-left: 70px;
   padding-bottom: 40px;
+  list-style: none;
 }
 .breadcrumbs-item:not(:first-of-type) {
   margin-left: 10px;
@@ -514,6 +534,7 @@ button {
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 70px;
+  list-style: none;
 }
 filter-category-infrastructure {
   width: 150px;
@@ -595,6 +616,7 @@ filter-category-infrastructure {
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
+  list-style: none;
 }
 .hotel-card {
   width: 340px;
@@ -675,6 +697,7 @@ filter-category-infrastructure {
   width: 1060px;
   margin: 0 70px 60px;
   padding: 0;
+  list-style: none;
 }
 .pagination-item {
   width: 60px;
