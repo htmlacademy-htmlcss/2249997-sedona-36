@@ -118,6 +118,8 @@ button {
   margin: 14px 0;
   margin-left: 20px;
   line-height: 20px;
+  border: none;
+  border-radius: 4px;
 }
 
 .navigation-list-right .navigation-item:not(:nth-of-type(3)) {
@@ -317,6 +319,8 @@ button {
   padding: 8px 50px;
   font-weight: 700;
   margin: 0 108px;
+  border: none;
+  border-radius: 4px;
 }
 .subscribe-index {
   background-color: rgb(173, 175, 177);
@@ -362,17 +366,18 @@ button {
 
 }
 .subscribe-form input {
-  width: 426px;
+  width: 452px;
   margin: 0;
-  padding-top: 14px;
   padding-left: 20px;
-  padding-bottom: 14px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   text-align: left;
-  vertical-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+  border: none;
 
 }
 .subscribe-form-submit-button {
@@ -388,6 +393,7 @@ button {
   padding-bottom: 8px;
   font-weight: 700;
   border: none;
+  border-radius: 0 4px 4px 0;
 }
 .page-footer {
   background-color: white;
@@ -551,6 +557,8 @@ filter-category-infrastructure {
   flex-direction: column;
   width: 191px;
   margin-left: 70px;
+  border: none;
+  border-radius: 4px;
 }
 .filter-hotels legend {
   font-size: 20px;
@@ -577,6 +585,8 @@ filter-category-infrastructure {
   padding: 50px;
   padding-top: 8px;
   padding-bottom: 8px;
+  border: none;
+  border-radius: 4px;
 }
 .filter-hotels input[type="reset"] {
   text-transform: uppercase;
@@ -658,6 +668,8 @@ filter-category-infrastructure {
   padding-left: 26px;
   padding-right: 26px;
   font-weight: 700;
+  border: none;
+  border-radius: 4px;
 }
 .hotel-card a {
   text-decoration: none;
@@ -675,6 +687,8 @@ filter-category-infrastructure {
   padding: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
+  border: none;
+  border-radius: 4px;
 }
 .hotel-rating-data {
   background-color: #F2F2F2;
@@ -699,6 +713,8 @@ filter-category-infrastructure {
 }
 .pagination-item {
   width: 60px;
+  border: none;
+  border-radius: 4px;
 }
 .pagination-item:not(:first-of-type) {
   margin-left: 8px;
