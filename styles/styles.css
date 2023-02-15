@@ -180,9 +180,7 @@ button {
   font-weight: 400;
   margin: 0;
 }
-advantages-item img {
-  display: block;
-}
+
 .devide-line {
   display: block;
   margin: 0 auto;
@@ -323,7 +321,7 @@ advantages-item img {
 .subscribe-index {
   background-color: rgb(173, 175, 177);
   background-image: url("../images/index/index-subscribe-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
 }
