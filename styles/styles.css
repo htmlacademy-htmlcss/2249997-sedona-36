@@ -94,6 +94,9 @@ button {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 385px 385px 385px 246px 385px;
 }
 
 .navigation-list-left a:not(.navigation-link-logo) {
@@ -206,7 +209,9 @@ button {
 .blue-area {
   padding-top: 102px;
   padding-bottom: 102px;
+
 }
+
 .simple {
   padding-top: 112px;
   padding-bottom: 112px;
@@ -240,53 +245,57 @@ button {
 .facilities h3 {
   padding-bottom: 30px;
 }
+
 .advantages-list li:first-child {
   background-color: #82B3D3;
   color: white;
-  width: 400px;
-
+  grid-row: 1/2;
+  grid-column: 1/-1;
 }
+
 .advantages-list li:nth-child(2) {
   background-color: #83B3D31F;
-  width: 800px;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 .advantages-list li:nth-child(3) {
-  background-color: #83B3D31F;
-  width: 400px;
+  background-color: #83B3D333;
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 .advantages-list li:nth-child(4) {
-  background-color: #83B3D333;
-  width: 400px;
+  background-color: #83B3D31F;
+  grid-row: 2/3;
+  grid-column: 3/4;
 }
+
 .advantages-list li:nth-child(5) {
-  background-color: #83B3D31F;
-  width: 400px;
+  background-color: #82B3D3;
+  grid-row: 3/4;
+  grid-column: 1/-1;
 }
+
 .advantages-list li:nth-child(6) {
-  background-color: #83B3D31F;
-  width: 800px;
+  background-color: white;
+  grid-row: 4/5;
+  grid-column: 1/-1;
 }
 .advantages-list li:nth-child(7) {
-  background-color: #82B3D3;
-  color: white;
-  width: 400px;
+  background-color: #83B3D31F;
+  grid-row: 5/6;
+  grid-column: 1/2;
 }
 .advantages-list li:nth-child(8) {
   background-color: white;
-  width: 1200px;
+  grid-row: 5/6;
+  grid-column: 2/3;
 }
 .advantages-list li:nth-child(9) {
   background-color: #83B3D31F;
-  width: 400px;
+  grid-row: 5/6;
+  grid-column: 3/4;
 }
-.advantages-list li:nth-child(10) {
-  background-color: white;
-  width: 400px;
-}
-.advantages-list li:nth-child(11) {
-  background-color: #83B3D31F;
-  width: 400px;
-}
+*/
 .hotel-search {
   width: 1200px;
   background-color: white;
