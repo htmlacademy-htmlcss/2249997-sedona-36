@@ -95,7 +95,7 @@ button {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 385px 385px 385px 246px 385px;
 }
 
