@@ -701,10 +701,18 @@ filter-category-infrastructure {
 .hotel-rating-stars {
   display: flex;
 }
-.hotel-rating-stars img {
-
+.hotel-rating-stars-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
-
+.hotel-rating-stars-list li {
+ padding-top: 10px;
+}
+.hotel-rating-stars-list li:not(:first-of-type) {
+  padding-left: 6px;
+}
 .type-of-housing-item {
   font-weight: 400;
   font-size: 18px;
