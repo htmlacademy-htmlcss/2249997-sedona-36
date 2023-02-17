@@ -50,8 +50,10 @@ button {
 .navigation {
   display: flex;
   width: 1200px;
+  height: 64px;
   margin: 0 auto;
   display: flex;
+  position: relative;
 
 
 }
@@ -60,6 +62,7 @@ button {
   padding: 0;
   width: 720px;
   display: flex;
+  flex-wrap: wrap;
   margin-left: 70px;
   list-style: none;
 }
@@ -79,8 +82,9 @@ button {
 .navigation-link-logo {
   display: block;
   margin: 0 auto;
-
   margin-right: 30px;
+  position: relative;
+  width: 140px;
 }
 .advantages-titles {
   width: 1200px;
@@ -89,9 +93,10 @@ button {
 .advantages-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 385px 385px 385px 246px 385px;
 }
 
 .navigation-list-left a:not(.navigation-link-logo) {
@@ -118,10 +123,18 @@ button {
   margin: 14px 0;
   margin-left: 20px;
   line-height: 20px;
+  border: none;
+  border-radius: 4px;
 }
 
 .navigation-list-right .navigation-item:not(:nth-of-type(3)) {
   padding: 23px 13px;
+}
+.navigation-list-right .navigation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .navigation-link-like {
   display: flex;
@@ -180,9 +193,7 @@ button {
   font-weight: 400;
   margin: 0;
 }
-advantages-item img {
-  display: block;
-}
+
 .devide-line {
   display: block;
   margin: 0 auto;
@@ -196,8 +207,13 @@ advantages-item img {
   padding-right: 85px;
 }
 .blue-area {
-  padding-top: 102px;
-  padding-bottom: 102px;
+ margin: 0;
+ padding: 0;
+ display: flex;
+}
+
+.blue-area-text {
+  padding: 102px 85px;
 }
 .simple {
   padding-top: 112px;
@@ -232,53 +248,57 @@ advantages-item img {
 .facilities h3 {
   padding-bottom: 30px;
 }
+
 .advantages-list li:first-child {
   background-color: #82B3D3;
   color: white;
-  width: 400px;
-
+  grid-row: 1/2;
+  grid-column: 1/-1;
 }
+
 .advantages-list li:nth-child(2) {
   background-color: #83B3D31F;
-  width: 800px;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 .advantages-list li:nth-child(3) {
-  background-color: #83B3D31F;
-  width: 400px;
+  background-color: #83B3D333;
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 .advantages-list li:nth-child(4) {
-  background-color: #83B3D333;
-  width: 400px;
+  background-color: #83B3D31F;
+  grid-row: 2/3;
+  grid-column: 3/4;
 }
+
 .advantages-list li:nth-child(5) {
-  background-color: #83B3D31F;
-  width: 400px;
+  background-color: #82B3D3;
+  grid-row: 3/4;
+  grid-column: 1/-1;
 }
+
 .advantages-list li:nth-child(6) {
-  background-color: #83B3D31F;
-  width: 800px;
+  background-color: white;
+  grid-row: 4/5;
+  grid-column: 1/-1;
 }
 .advantages-list li:nth-child(7) {
-  background-color: #82B3D3;
-  color: white;
-  width: 400px;
+  background-color: #83B3D31F;
+  grid-row: 5/6;
+  grid-column: 1/2;
 }
 .advantages-list li:nth-child(8) {
   background-color: white;
-  width: 1200px;
+  grid-row: 5/6;
+  grid-column: 2/3;
 }
 .advantages-list li:nth-child(9) {
   background-color: #83B3D31F;
-  width: 400px;
+  grid-row: 5/6;
+  grid-column: 3/4;
 }
-.advantages-list li:nth-child(10) {
-  background-color: white;
-  width: 400px;
-}
-.advantages-list li:nth-child(11) {
-  background-color: #83B3D31F;
-  width: 400px;
-}
+*/
 .hotel-search {
   width: 1200px;
   background-color: white;
@@ -319,11 +339,13 @@ advantages-item img {
   padding: 8px 50px;
   font-weight: 700;
   margin: 0 108px;
+  border: none;
+  border-radius: 4px;
 }
 .subscribe-index {
   background-color: rgb(173, 175, 177);
   background-image: url("../images/index/index-subscribe-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
 }
@@ -361,21 +383,23 @@ advantages-item img {
 .subscribe-form {
   margin: 0 auto;
   display: flex;
-
 }
 .subscribe-form input {
-  width: 426px;
+  width: 452px;
   margin: 0;
-  padding-top: 14px;
   padding-left: 20px;
-  padding-bottom: 14px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   text-align: left;
-  vertical-align: center;
-
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+.form-in-catalog input {
+  background-color: #F2F2F2;
 }
 .subscribe-form-submit-button {
   background-color: #82B3D3;
@@ -390,6 +414,7 @@ advantages-item img {
   padding-bottom: 8px;
   font-weight: 700;
   border: none;
+  border-radius: 0 4px 4px 0;
 }
 .page-footer {
   background-color: white;
@@ -497,7 +522,7 @@ advantages-item img {
 }
 .catalog-filter {
   background-color: burlywood;
-  background-image: url(../images/catalog/catalog-filter-background.jpg);
+  background-image: url(../images/catalog/catalog-filter-background-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -553,6 +578,8 @@ filter-category-infrastructure {
   flex-direction: column;
   width: 191px;
   margin-left: 70px;
+  border: none;
+  border-radius: 4px;
 }
 .filter-hotels legend {
   font-size: 20px;
@@ -579,6 +606,8 @@ filter-category-infrastructure {
   padding: 50px;
   padding-top: 8px;
   padding-bottom: 8px;
+  border: none;
+  border-radius: 4px;
 }
 .filter-hotels input[type="reset"] {
   text-transform: uppercase;
@@ -609,21 +638,29 @@ filter-category-infrastructure {
   vertical-align: top;
 }
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1060px;
   margin: 0 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  padding-left: 0;
+  padding-bottom: 40px;
   list-style: none;
-  padding: 0;
-  margin-bottom: 40px;
-  list-style: none;
+
 }
 .hotel-card {
   width: 340px;
+  border: solid 1px #E6E6E6;
+  border-radius: 4px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+
 
 }
-
+.hotel-card img {
+  display: block;
+  padding: 20px 20px 16px;
+}
 .hotel-card:not(:first-of-type):not(:nth-of-type(4)) {
   margin-left: 20px;
 }
@@ -634,6 +671,48 @@ filter-category-infrastructure {
   line-height: 28px;
   text-align: left;
   vertical-align: top;
+}
+.hotel-card-link h3 {
+  margin: 0;
+  padding: 0 20px 16px;
+}
+.hotel-card-text {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 16px;
+}
+.hotel-card-text p {
+  margin: 0;
+  display: inline-block;
+}
+.hotel-card-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 16px;
+}
+.hotel-rating {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 20px;
+}
+.hotel-rating-stars img {
+  padding: 0;
+}
+.hotel-rating-stars {
+  display: flex;
+}
+.hotel-rating-stars-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.hotel-rating-stars-list li {
+ padding-top: 10px;
+}
+.hotel-rating-stars-list li:not(:first-of-type) {
+  padding-left: 6px;
 }
 .type-of-housing-item {
   font-weight: 400;
@@ -660,6 +739,8 @@ filter-category-infrastructure {
   padding-left: 26px;
   padding-right: 26px;
   font-weight: 700;
+  border: none;
+  border-radius: 4px;
 }
 .hotel-card a {
   text-decoration: none;
@@ -677,14 +758,25 @@ filter-category-infrastructure {
   padding: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
+  border: none;
+  border-radius: 4px;
+}
+.in-favorite {
+  background-color: #7DB54F;
 }
 .hotel-rating-data {
   background-color: #F2F2F2;
+  margin: 0;
+  display: block;
+  padding: 9px 22px;
   font-weight: 400;
   font-size: 16px;
+  text-transform: uppercase;
   line-height: 20px;
   text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
+  border: none;
+  border-radius: 4px;
 }
 .devide-line-style {
   display: block;
@@ -701,6 +793,9 @@ filter-category-infrastructure {
 }
 .pagination-item {
   width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 4px;
 }
 .pagination-item:not(:first-of-type) {
   margin-left: 8px;
@@ -716,6 +811,9 @@ filter-category-infrastructure {
 .pagination-item a {
   text-decoration: none;
   color: white;
+  margin: 12px auto;
+  display: block;
+  text-align: center;
 }
 
 .pagination-current {
@@ -737,6 +835,7 @@ filter-category-infrastructure {
 .pagination-current a {
   text-decoration: none;
   color: black;
+  margin: 12px auto;
 }
 .pagination-dotted a {
   text-decoration: none;
