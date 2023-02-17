@@ -792,6 +792,7 @@ filter-category-infrastructure {
 }
 .pagination-item {
   width: 60px;
+  height: 60px;
   border: none;
   border-radius: 4px;
 }
@@ -809,6 +810,9 @@ filter-category-infrastructure {
 .pagination-item a {
   text-decoration: none;
   color: white;
+  margin: 12px auto;
+  display: block;
+  text-align: center;
 }
 
 .pagination-current {
@@ -830,6 +834,7 @@ filter-category-infrastructure {
 .pagination-current a {
   text-decoration: none;
   color: black;
+  margin: 12px auto;
 }
 .pagination-dotted a {
   text-decoration: none;
