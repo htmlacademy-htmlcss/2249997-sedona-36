@@ -671,6 +671,19 @@ filter-category-infrastructure {
   text-align: left;
   vertical-align: top;
 }
+.hotel-card-link h3 {
+  margin: 0;
+  padding: 0 20px 16px;
+}
+.hotel-card-text {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 16px;
+}
+.hotel-card-text p {
+  margin: 0;
+}
 .type-of-housing-item {
   font-weight: 400;
   font-size: 18px;
