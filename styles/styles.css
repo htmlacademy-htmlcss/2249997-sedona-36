@@ -383,7 +383,6 @@ button {
 .subscribe-form {
   margin: 0 auto;
   display: flex;
-
 }
 .subscribe-form input {
   width: 452px;
@@ -398,7 +397,9 @@ button {
   box-sizing: border-box;
   border-radius: 4px 0 0 4px;
   border: none;
-
+}
+.form-in-catalog input {
+  background-color: #F2F2F2;
 }
 .subscribe-form-submit-button {
   background-color: #82B3D3;
