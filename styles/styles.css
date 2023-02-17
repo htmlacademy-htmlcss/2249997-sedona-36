@@ -637,21 +637,29 @@ filter-category-infrastructure {
   vertical-align: top;
 }
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1060px;
   margin: 0 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  padding-left: 0;
+  padding-bottom: 40px;
   list-style: none;
-  padding: 0;
-  margin-bottom: 40px;
-  list-style: none;
+
 }
 .hotel-card {
   width: 340px;
+  border: solid 1px #E6E6E6;
+  border-radius: 4px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+
 
 }
-
+.hotel-card img {
+  display: block;
+  padding: 20px 20px 16px;
+}
 .hotel-card:not(:first-of-type):not(:nth-of-type(4)) {
   margin-left: 20px;
 }
