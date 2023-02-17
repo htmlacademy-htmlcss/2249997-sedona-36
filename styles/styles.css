@@ -760,6 +760,9 @@ filter-category-infrastructure {
   border: none;
   border-radius: 4px;
 }
+.in-favorite {
+  background-color: #7DB54F;
+}
 .hotel-rating-data {
   background-color: #F2F2F2;
   margin: 0;
