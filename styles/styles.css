@@ -75,6 +75,40 @@ button {
   display: flex;
   list-style: none;
 }
+.navigation-list-right span {
+  cursor: pointer;
+}
+.navigation-list-right .navigation-item:nth-of-type(1) {
+  background-image: url("../images/header/header-search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+.navigation-list-right .navigation-item:nth-of-type(2) {
+  background-image: url("../images/header/header-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17px 18px;
+  cursor: pointer;
+  position: relative;
+}
+.numbers-of-likes {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: top;
+  background-color: #7DB54F;
+  background-size: 20px 20px;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top:10px;
+  left: 10px;
+  box-sizing: border-box;
+}
 .page-container {
   width: 1200px;
   margin: 0 auto;
@@ -130,6 +164,7 @@ button {
 .navigation-list-right .navigation-item:not(:nth-of-type(3)) {
   padding: 23px 13px;
 }
+
 .navigation-list-right .navigation-item {
   display: flex;
   flex-direction: column;
@@ -415,6 +450,7 @@ button {
   font-weight: 700;
   border: none;
   border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 .page-footer {
   background-color: white;
@@ -522,7 +558,7 @@ button {
 }
 .catalog-filter {
   background-color: burlywood;
-  background-image: url(../images/catalog/catalog-filter-background-2.jpg);
+  background-image: url("../images/catalog/catalog-filter-background-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -760,6 +796,7 @@ filter-category-infrastructure {
   padding-bottom: 8px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 .in-favorite {
   background-color: #7DB54F;
