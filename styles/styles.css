@@ -561,32 +561,34 @@ button {
   margin-left: 200px;
 }
 .catalog-hotels-filter-icons {
-  width: 160px;
+  min-width: 160px;
   margin-right: 70px;
   margin-left: 70px;
 }
 .catalog-hotels-filter-icons a{
   display: inline-block;
   margin: 0;
-  padding: 17px 16px;
+  padding: 22px 22px;
   background-size: 14px 16px;
+  border: solid 2px #E5E5E5;
+  border-radius: 4px;
+}
+.catalog-hotels-filter-icons a:not(:first-of-type){
+  margin-left: 8px;
 }
 .catalog-hotels-filter-icons a:first-of-type {
   background-image: url("../images/catalog/catalog-sorting-icon-cards-current.svg");
-
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 .catalog-hotels-filter-icons a:nth-of-type(2) {
   background-image: url("../images/catalog/catalog-sorting-icon-slides.svg");
-  background-size: 14px 16px;
   background-repeat: no-repeat;
   background-position: center;
 }
 .catalog-hotels-filter-icons a:nth-of-type(3) {
   background-image: url("../images/catalog/catalog-sorting-icon-list.svg");
-  background-size: 14px 16px;
   background-repeat: no-repeat;
   background-position: center;
 }
