@@ -559,6 +559,21 @@ button {
   width: 292px;
   height: 49px;
   margin-left: 200px;
+  padding-left: 20px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  border-radius: 4px;
+  border: solid 2px #E5E5E5;
+}
+.catalog-hotels-filter-selector:hover {
+  border: solid 2px #68A2CA;
+}
+.catalog-hotels-filter-selector:focus {
+  border: solid 2px #68A2CA;
+}
+.catalog-hotels-filter-selector:active {
+  border: solid 2px #3F5E72;
 }
 .catalog-hotels-filter-icons {
   min-width: 160px;
