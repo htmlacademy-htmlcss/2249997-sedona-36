@@ -177,6 +177,15 @@ button {
 .brown-button:hover {
   background-color: #615048;
 }
+.brown-button:focus {
+  background-color: #615048;
+}
+.brown-button:active {
+  background-color: #756157;
+  color: #FFFFFF4D
+
+}
+
 .navigation-list-right .navigation-item:not(:nth-of-type(3)) {
   padding: 23px 13px;
 }
