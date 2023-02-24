@@ -919,3 +919,13 @@ filter-category-infrastructure {
 .pagination-item-link:active {
   color: #FFFFFF4D;
 }
+.green-button:hover {
+  background-color: #6C9E42;
+}
+.green-button:focus {
+  background-color: #6C9E42;
+}
+.green-button:active {
+  background-color:#7DB54F;
+  color: #FFFFFF4D;
+}
