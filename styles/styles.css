@@ -174,18 +174,6 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-.brown-button:hover {
-  background-color: #615048;
-}
-.brown-button:focus {
-  background-color: #615048;
-}
-.brown-button:active {
-  background-color: #756157;
-  color: #FFFFFF4D
-
-}
-
 .navigation-list-right .navigation-item:not(:nth-of-type(3)) {
   padding: 23px 13px;
 }
@@ -906,4 +894,28 @@ filter-category-infrastructure {
 .pagination-dotted a {
   text-decoration: none;
   color: black;
+}
+.brown-button:hover {
+  background-color: #615048;
+}
+.brown-button:focus {
+  background-color: #615048;
+}
+.brown-button:active {
+  background-color: #756157;
+  color: #FFFFFF4D
+
+}
+.blue-button:hover {
+  background-color: #68A2CA;
+}
+.blue-button:focus {
+  background-color: #68A2CA;
+}
+.blue-button:active {
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
+}
+.pagination-item-link:active {
+  color: #FFFFFF4D;
 }
