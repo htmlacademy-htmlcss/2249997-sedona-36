@@ -573,6 +573,15 @@ button {
   border: solid 2px #E5E5E5;
   border-radius: 4px;
 }
+.catalog-hotels-filter-icons a:hover {
+  border: solid 2px #000000;
+}
+.catalog-hotels-filter-icons a:focus {
+  border: solid 2px #68A2CA;
+}
+.catalog-hotels-filter-icons a:active {
+  border: solid 2px #000000;
+}
 .catalog-hotels-filter-icons a:not(:first-of-type){
   margin-left: 8px;
 }
@@ -591,6 +600,9 @@ button {
   background-image: url("../images/catalog/catalog-sorting-icon-list.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.catalog-hotels-filter-icons .current-button {
+  border: solid 2px #000000;
 }
 .catalog-filter {
   background-color: burlywood;
