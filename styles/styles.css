@@ -642,8 +642,27 @@ button {
   padding-bottom: 40px;
   list-style: none;
 }
+.breadcrumbs-item {
+  position: relative;
+}
 .breadcrumbs-link {
   position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumbs-item:first-of-type .breadcrumbs-link {
+  height: 12px;
+  width: 12px;
+  background-image: url("../images/catalog/catalog-filter-icon-house.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 4px;
+}
+.breadcrumbs-item:first-of-type {
+  margin-right: 12px;
 }
 .breadcrumbs-item:not(:first-of-type) {
   margin-left: 28px;
