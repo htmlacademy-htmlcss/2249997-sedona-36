@@ -492,7 +492,15 @@ button {
   padding: 0;
   display: flex;
   list-style: none;
+  align-items: center;
+  position: relative;
 }
+.footer-social-list .footer-social-item:nth-of-type(3) {
+  position: absolute;
+  top:12px;
+  left:96px;
+}
+
 .footer-social-item a {
   padding: 13px 12px;
 }
