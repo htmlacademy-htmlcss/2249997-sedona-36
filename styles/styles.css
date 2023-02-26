@@ -803,9 +803,6 @@ filter-category-infrastructure {
   display: block;
   padding: 20px 20px 16px;
 }
-.hotel-card:not(:first-of-type):not(:nth-of-type(4)) {
-  margin-left: 20px;
-}
 .hotel-card-link {
   color: black;
   text-decoration: none;
