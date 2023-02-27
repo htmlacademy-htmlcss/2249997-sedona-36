@@ -140,7 +140,7 @@ button {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 385px 385px 385px 246px 385px;
+  grid-template-rows: repeat(5,auto);
 }
 .navigation-list-left .navigation-item {
   position: relative;
@@ -266,6 +266,7 @@ button {
 
 .blue-area-text {
   padding: 102px 85px;
+  color: #FFFFFF;
 }
 .simple {
   padding-top: 112px;
@@ -492,7 +493,15 @@ button {
   padding: 0;
   display: flex;
   list-style: none;
+  align-items: center;
+  position: relative;
 }
+.footer-social-list .footer-social-item:nth-of-type(3) {
+  position: absolute;
+  top:12px;
+  left:96px;
+}
+
 .footer-social-item a {
   padding: 13px 12px;
 }
@@ -795,9 +804,6 @@ filter-category-infrastructure {
   display: block;
   padding: 20px 20px 16px;
 }
-.hotel-card:not(:first-of-type):not(:nth-of-type(4)) {
-  margin-left: 20px;
-}
 .hotel-card-link {
   color: black;
   text-decoration: none;
@@ -916,7 +922,6 @@ filter-category-infrastructure {
 .devide-line-style {
   display: block;
   margin:0 auto 40px;
-  height: 1px;
 
 }
 .pagination-list {
@@ -1009,4 +1014,31 @@ filter-category-infrastructure {
 .green-button:active {
   background-color:#7DB54F;
   color: #FFFFFF4D;
+}
+.newsletter-button:hover path {
+  fill: #68A2CA;
+}
+.newsletter-button:focus path {
+  fill: #68A2CA;
+}
+.newsletter-button:active path {
+  fill: #68A2CA4D;
+}
+.phone a:hover {
+ color: #756157;
+}
+.phone a:focus {
+  color: #756157;
+ }
+.phone a:active {
+  color: #7561574D;
+ }
+.html-academy-link:hover path {
+   fill: #756157;
+ }
+.html-academy-link:focus path {
+  fill: #756157;
+}
+.html-academy-link:active path {
+  fill: #7561574D;
 }
