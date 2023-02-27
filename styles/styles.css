@@ -266,6 +266,7 @@ button {
 
 .blue-area-text {
   padding: 102px 85px;
+  color: #FFFFFF;
 }
 .simple {
   padding-top: 112px;
@@ -921,7 +922,6 @@ filter-category-infrastructure {
 .devide-line-style {
   display: block;
   margin:0 auto 40px;
-  height: 1px;
 
 }
 .pagination-list {
@@ -1023,4 +1023,22 @@ filter-category-infrastructure {
 }
 .newsletter-button:active path {
   fill: #68A2CA4D;
+}
+.phone a:hover {
+ color: #756157;
+}
+.phone a:focus {
+  color: #756157;
+ }
+.phone a:active {
+  color: #7561574D;
+ }
+.html-academy-link:hover path {
+   fill: #756157;
+ }
+.html-academy-link:focus path {
+  fill: #756157;
+}
+.html-academy-link:active path {
+  fill: #7561574D;
 }
