@@ -1015,12 +1015,12 @@ filter-category-infrastructure {
   background-color:#7DB54F;
   color: #FFFFFF4D;
 }
-.newsletter-button:hover {
+.newsletter-button:hover path {
   fill: #68A2CA;
 }
-.newsletter-button:focus {
+.newsletter-button:focus path {
   fill: #68A2CA;
 }
-.footer-social-item .newsletter-button:active {
+.newsletter-button:active path {
   fill: #68A2CA4D;
 }
