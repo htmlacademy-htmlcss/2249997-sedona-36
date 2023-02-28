@@ -607,6 +607,10 @@ button {
   line-height: 21px;
   border-radius: 4px;
   border: solid 2px #E5E5E5;
+  appearance: none;
+  background-image: url("../images/catalog/catalog-filter-selector-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 .catalog-hotels-filter-selector:hover {
   border: solid 2px #68A2CA;
