@@ -795,6 +795,19 @@ button {
 .control:active .control-mark {
   border: solid 3px #83B3D3;
 }
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  content: "";
+  border-radius: 50%;
+  background-color: #3F5E72;
+  top:2px;
+  left:2px;
+}
 .filter-category-price-range {
   width: 291px;
   margin: 0;

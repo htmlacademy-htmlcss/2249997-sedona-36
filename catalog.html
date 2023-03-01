@@ -84,8 +84,11 @@
             <legend>Тип жилья:</legend>
               <ul class="filter-category-list type-of-housing-list">
                 <li class="type-of-housing-list-item">
-                  <input type="radio" name="type-of-housing-filter" id="hotel" value="Hotel" checked>
-                  <label for="hotel">Гостиница</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing-filter" value="Hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
+                  </label>
                 </li>
                 <li class="type-of-housing-list-item">
                   <input type="radio" name="type-of-housing-filter" id="motel" value="Motel">
