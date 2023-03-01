@@ -768,6 +768,7 @@ button {
   margin-left: 140px;
   border: none;
   padding: 0;
+  position: relative;
 }
 .filter-category-price-range legend {
   padding-bottom: 32px;
