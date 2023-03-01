@@ -798,6 +798,9 @@ button {
   top:-8px;
   left: 187px;
 }
+.range-wrapper-inputs {
+  display: flex;
+}
 .filter-category-price-range legend {
   padding-bottom: 32px;
 }
@@ -808,7 +811,7 @@ button {
   font: inherit;
   font-size: 18px;
   border: solid 3px transparent;
-  width: 141px;
+  width: 143px;
   box-sizing: border-box;
   margin-bottom: 46px;
   appearance: textfield;
@@ -831,18 +834,15 @@ button {
   position: absolute;
   color: #00000040;
   right:20px;
-  top:0;
+  top:15px;
   font-weight: 400;
-}
-.price-range-label:first-of-type span {
-  right:22px;
 }
 .price-range-label:first-of-type input[type="number"] {
   border-radius: 4px 0 0 4px ;
 }
 .price-range-label:nth-of-type(2) input[type="number"] {
   border-radius: 0 4px 4px 0 ;
-
+  margin-left: 2px;
 }
 .filter-category-buttons {
   display: flex;
