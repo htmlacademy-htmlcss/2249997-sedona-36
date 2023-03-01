@@ -54,9 +54,9 @@
           </li>
         </ol>
         <form class="filter-hotels" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="filter-category-infrastructure">
+          <fieldset class="filter-category infrastructure">
             <legend>Инфраструктура:</legend>
-              <ul class="infrastructure-list">
+              <ul class="filter-category-list infrastructure-list">
                 <li class="infrastructure-item">
                   <input type="checkbox" id ="pool" name="pool" checked>
                <label for="pool">Бассейн</label>
@@ -71,9 +71,9 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="filter-category-type-of-housing">
-            <legend>Тип жилья::</legend>
-              <ul class="type-of-housing-list">
+          <fieldset class="filter-category type-of-housing">
+            <legend>Тип жилья:</legend>
+              <ul class="filter-category-list type-of-housing-list">
                 <li class="type-of-housing-list-item">
                   <input type="radio" name="type-of-housing-filter" id="hotel" value="Hotel" checked>
                   <label for="hotel">Гостиница</label>
@@ -90,6 +90,8 @@
           </fieldset>
           <fieldset class="filter-category-price-range">
             <legend>Стоимость, ₽::</legend>
+            <input type="number" value="0" placeholder="от">
+            <input type="number" value="9000" placeholder="до">
             <input type="range" step="10" min="0" max="9000">
           </fieldset>
           <div class="filter-category-buttons">

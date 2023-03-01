@@ -741,17 +741,54 @@ button {
   padding-bottom: 70px;
   list-style: none;
 }
-filter-category-infrastructure {
+.filter-category {
   width: 150px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.filter-category legend {
+  padding-bottom: 32px;
+}
+.type-of-housing {
   margin-left: 70px;
 }
-.filter-category-type-of-housing {
-  width: 150px;
-  margin-left: 70px;
+.filter-category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+.filter-category-list li:not(:last-of-type) {
+  padding-bottom: 16px;
+}
+
 .filter-category-price-range {
   width: 288px;
+  margin: 0;
   margin-left: 140px;
+  border: none;
+  padding: 0;
+}
+.filter-category-price-range legend {
+  padding-bottom: 32px;
+}
+.filter-category-price-range input[type="number"] {
+  padding: 12px 20px;
+  padding-right: auto;
+  font: inherit;
+  font-size: 18px;
+  border: none;
+  width: 140px;
+  box-sizing: border-box;
+
+  margin-bottom: 36px;
+}
+.filter-category-price-range input[type="number"]:first-of-type {
+  border-radius: 4px 0 0 4px ;
+}
+.filter-category-price-range input[type="number"]:nth-of-type(2) {
+  border-radius: 0 4px 4px 0 ;
+
 }
 .filter-category-buttons {
   display: flex;
@@ -788,18 +825,20 @@ filter-category-infrastructure {
   padding-bottom: 8px;
   border: none;
   border-radius: 4px;
+  margin-top: 56px;
+  margin-bottom: 32px;
 }
 .filter-hotels input[type="reset"] {
   text-transform: uppercase;
-  font-weight: 700;
+  font: inherit;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   vertical-align: center;
-  padding: 57.5px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-
+  padding: 8px 57px;
+  background:transparent;
+  border: none;
+  color: white;
 }
 .catalog-hotels-text {
   text-transform: uppercase;
