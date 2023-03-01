@@ -1226,3 +1226,11 @@ button {
   display: flex;
   background-color: rgba(0, 0, 0, 0.15);
 }
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: white;
+  border-radius: 50px;
+  width: 717px;
+}
