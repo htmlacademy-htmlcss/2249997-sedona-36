@@ -1234,3 +1234,20 @@ button {
   border-radius: 50px;
   width: 717px;
 }
+.modal-close-button {
+  position: absolute;
+  background-image: url("../images/index/modal-close.svg");
+  background-size: cover;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 50%;
+  left: 613px;
+  cursor: pointer;
+}
+.modal-content h2 {
+  margin: 0;
+  text-transform: uppercase;
+}
