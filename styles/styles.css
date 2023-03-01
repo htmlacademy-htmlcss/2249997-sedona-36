@@ -761,7 +761,28 @@ button {
 .filter-category-list li:not(:last-of-type) {
   padding-bottom: 16px;
 }
-
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+}
+.control-mark {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: solid 3px transparent;
+  border-radius: 4px;
+}
+.control:focus .control-mark {
+  border: solid 3px #83B3D3;
+}
+.control:active .control-mark {
+  border: solid 2px #83B3D3;
+}
 .filter-category-price-range {
   width: 291px;
   margin: 0;
