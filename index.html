@@ -179,6 +179,31 @@
         </button>
         <section class="modal-content">
           <h2>Поиск гостиницы в Седоне</h2>
+          <form class="modal-hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-date-container date-in">
+              <label class="input-label">
+                Дата заезда:<input type="date" name="date-in" id="date-in" value="27 апреля 2020">
+              </label>
+              <span class="info error-info">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="modal-date-container date-out">
+              <label class="input-label">
+                Дата выезда:<input type="date" name="date-out" id="date-out" value="1 сентября 2023">
+              </label>
+              <span class="info availability-info">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="modal-number-container adults">
+              <label class="input-label">
+                Взрослые: <input type="number" name="number of adulst" id="number of adulst" value="2">
+              </label>
+            </div>
+            <div class="modal-number-container children">
+              <label class="input-label">
+                Дети: <input type="number" name="number of children" id="number of children" value="2">
+              </label>
+            </div>
+            <input type="submit" value="Найти">
+          </form>
         </section>
       </div>
     </div>
