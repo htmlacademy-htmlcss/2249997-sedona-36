@@ -964,7 +964,8 @@ button {
   padding-left: 0;
   padding-bottom: 40px;
   list-style: none;
-
+  border-bottom: solid 1px #E6E6E6;
+  margin-bottom: 40px;
 }
 .hotel-card {
   width: 340px;
