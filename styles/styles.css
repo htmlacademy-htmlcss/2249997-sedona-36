@@ -774,14 +774,26 @@ button {
   width: 20px;
   height: 20px;
   background-color: white;
+  box-sizing: border-box;
   border: solid 3px transparent;
   border-radius: 4px;
+}
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  content: "";
+  background-image: url("../images/catalog/catalog-control-v.svg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 11px;
+  position: absolute;
+  top:2px;
+  left:1px;
 }
 .control:focus .control-mark {
   border: solid 3px #83B3D3;
 }
 .control:active .control-mark {
-  border: solid 2px #83B3D3;
+  border: solid 3px #83B3D3;
 }
 .filter-category-price-range {
   width: 291px;
