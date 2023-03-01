@@ -770,6 +770,27 @@ button {
   padding: 0;
   position: relative;
 }
+.range-scale {
+  position: relative;
+  margin-bottom: 8px;
+  height: 4px;
+  background-color: #FFFFFF4D;
+}
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: white;
+}
+.range-toggle {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+}
+
 .filter-category-price-range legend {
   padding-bottom: 32px;
 }
@@ -781,7 +802,6 @@ button {
   border: none;
   width: 140px;
   box-sizing: border-box;
-
   margin-bottom: 36px;
 }
 .filter-category-price-range input[type="number"]:first-of-type {
