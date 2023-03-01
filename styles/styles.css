@@ -790,7 +790,14 @@ button {
   border-radius: 5px;
   position: absolute;
 }
-
+.toggle-min {
+  top:-8px;
+  left: 0;
+}
+.toggle-max {
+  top:-8px;
+  left: 187px;
+}
 .filter-category-price-range legend {
   padding-bottom: 32px;
 }
