@@ -763,7 +763,7 @@ button {
 }
 
 .filter-category-price-range {
-  width: 288px;
+  width: 291px;
   margin: 0;
   margin-left: 140px;
   border: none;
@@ -801,20 +801,46 @@ button {
 .filter-category-price-range legend {
   padding-bottom: 32px;
 }
+
 .filter-category-price-range input[type="number"] {
   padding: 12px 20px;
   padding-right: auto;
   font: inherit;
   font-size: 18px;
-  border: none;
-  width: 140px;
+  border: solid 3px transparent;
+  width: 141px;
   box-sizing: border-box;
-  margin-bottom: 36px;
+  margin-bottom: 46px;
+  appearance: textfield;
 }
-.filter-category-price-range input[type="number"]:first-of-type {
+.filter-category-price-range input[type="number"]:focus {
+  border: solid 3px #83B3D3;
+}
+.filter-category-price-range input[type="number"]:active {
+  border: solid 2px #000000;
+}
+.filter-category-price-range input[type="number"]::-webkit-outer-spin-button,
+.filter-category-price-range input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.price-range-label {
+  position: relative;
+}
+.price-range-label span {
+  position: absolute;
+  color: #00000040;
+  right:20px;
+  top:0;
+  font-weight: 400;
+}
+.price-range-label:first-of-type span {
+  right:22px;
+}
+.price-range-label:first-of-type input[type="number"] {
   border-radius: 4px 0 0 4px ;
 }
-.filter-category-price-range input[type="number"]:nth-of-type(2) {
+.price-range-label:nth-of-type(2) input[type="number"] {
   border-radius: 0 4px 4px 0 ;
 
 }
