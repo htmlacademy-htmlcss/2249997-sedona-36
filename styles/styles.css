@@ -1341,6 +1341,22 @@ button {
 .error-info {
   color: #FF5757;
 }
+.children {
+  position: relative;
+}
+.children-info::after {
+position: absolute;
+ content: "i";
+ text-align: center;
+ vertical-align: middle;
+ color: white;
+ background-color: #83B3D3;
+ background-size: cover;
+ border-radius: 50%;
+ height: 26px;
+ width: 26px;
+ left: 59px;
+}
 /* НА гридах */
 /* .modal-hotel-search-form {
   display: grid;
