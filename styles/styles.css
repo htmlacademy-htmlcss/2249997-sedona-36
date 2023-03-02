@@ -1225,7 +1225,6 @@ button {
   height: 100%;
   display: flex;
   background-color: rgba(0, 0, 0, 0.15);
-
 }
 .modal {
   position: relative;
@@ -1404,6 +1403,17 @@ position: absolute;
 .modal-close-button:active path {
   fill: #7561574D;
 }
+.modal-content .blue-button:hover {
+  background-color: #68A2CA;
+}
+.modal-content .blue-button:focus {
+  background-color: #68A2CA;
+}
+.modal-content .blue-button:active {
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
+}
+
 /* НА гридах */
 /* .modal-hotel-search-form {
   display: grid;
