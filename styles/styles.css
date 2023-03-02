@@ -1413,7 +1413,9 @@ position: absolute;
   background-color: #82B3D3;
   color: #FFFFFF4D;
 }
-
+.modal-container {
+  display: none;
+}
 /* НА гридах */
 /* .modal-hotel-search-form {
   display: grid;
