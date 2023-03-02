@@ -1225,6 +1225,7 @@ button {
   height: 100%;
   display: flex;
   background-color: rgba(0, 0, 0, 0.15);
+
 }
 .modal {
   position: relative;
@@ -1240,17 +1241,17 @@ button {
 }
 .modal-close-button {
   position: absolute;
-  background-image: url("../images/index/modal-close.svg");
-  background-size: cover;
-  width: 52px;
-  height: 52px;
   padding: 0;
-  background-repeat: no-repeat;
-  border: none;
   border-radius: 50%;
   top:64px;
   left: 613px;
   cursor: pointer;
+  border: solid 3px transparent;
+}
+.modal-close-button svg {
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 .modal-content h2 {
   margin: 0;
@@ -1393,6 +1394,15 @@ position: absolute;
 .children-info:hover ~ .children-info-popover {
   opacity: 1;
   transition: 1s;
+}
+.modal-close-button:hover {
+  border: solid 3px #83B3D3;
+}
+.modal-close-button:active {
+  border: solid 3px transparent;
+}
+.modal-close-button:active path {
+  fill: #7561574D;
 }
 /* НА гридах */
 /* .modal-hotel-search-form {
