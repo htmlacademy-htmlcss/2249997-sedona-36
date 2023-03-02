@@ -1359,9 +1359,6 @@ position: absolute;
  left: 59px;
  cursor: pointer;
 }
-.children-info:hover {
-
-}
 .children-info-popover {
   position: absolute;
   background-color:#333333;
@@ -1369,6 +1366,8 @@ position: absolute;
   border-radius: 10px;
   left: -56px;
   top:56px;
+  opacity: 0;
+  transition: 1s;
 }
 .children-info-popover p {
   font-size: 16px;
@@ -1390,6 +1389,10 @@ position: absolute;
   position: absolute;
   top: -9px;
   left: 118px;
+}
+.children-info:hover ~ .children-info-popover {
+  opacity: 1;
+  transition: 1s;
 }
 /* НА гридах */
 /* .modal-hotel-search-form {
