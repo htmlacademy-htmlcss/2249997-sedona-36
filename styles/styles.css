@@ -1290,6 +1290,7 @@ button {
   border-radius: 4px;
   margin-bottom: 48px;
 }
+
 .modal-hotel-search-form input[type="submit"] {
   width: 577px;
   font:inherit;
@@ -1356,6 +1357,28 @@ position: absolute;
  height: 26px;
  width: 26px;
  left: 59px;
+ cursor: pointer;
+}
+.children-info:hover {
+
+}
+.children-info-popover {
+  position: absolute;
+  background-color:#333333;
+  width: 256px;
+  border-radius: 10px;
+  left: -56px;
+  top:56px;
+}
+.children-info-popover p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  padding: 18px;
+  padding-left: 22px;
+  padding-top: 15px;
 }
 /* НА гридах */
 /* .modal-hotel-search-form {
