@@ -11,7 +11,7 @@
         <ul class="navigation-list-left">
          <li class="navigation-item"><a class="navigation-link-logo"><img src="images/header/index-logo.svg" height="70" width="140" alt="Мини Логотип Седона."></a></li>
           <li class="navigation-item"><a class="navigation-link-index navigation-link-current" href="#">Главная</a></li>
-          <li  class="navigation-item"><a class="navigation-link-about" href="#">О седоне</a></li>
+          <li  class="navigation-item"><a class="navigation-link-about" href="#">О Cедоне</a></li>
           <li class="navigation-item"><a class="navigation-link-hotels" href="catalog.html">Гостиницы</a></li>
         </ul>
 
@@ -172,6 +172,46 @@
         </a>
       </div>
     </footer>
-
+    <div class="modal-container">
+      <div class="modal modal-hotel-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="none" viewBox="0 0 52 52"><circle cx="26" cy="26" r="26" fill="#F2F2F2"/>
+            <path fill="#000" d="m33.49 20.78-1.3-1.29-5.7 5.7-5.7-5.7-1.3 1.3 5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/>
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2>Поиск гостиницы в Седоне</h2>
+          <form class="modal-hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-date-container date-in">
+              <label class="input-label">
+                <span class="label-name">Дата заезда:</span><input type="date" name="date-in" id="date-in" value="27 апреля 2020">
+              </label>
+              <span class="info error-info">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="modal-date-container date-out">
+              <label class="input-label">
+                <span class="label-name">Дата выезда:</span><input type="date" name="date-out" id="date-out" value="1 сентября 2023">
+              </label>
+              <span class="info availability-info">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="modal-number-container adults">
+              <label class="input-label">
+                <span class="label-name">Взрослые:</span><input type="number" name="number of adulst" id="number of adulst" value="2">
+              </label>
+            </div>
+            <div class="modal-number-container children">
+              <label class="input-label">
+                <span class="label-name children-info">Дети:</span><input type="number" name="number of children" id="number of children" value="2">
+                <div class="children-info-popover">
+                  <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                </div>
+              </label>
+            </div>
+            <input class="blue-button" type="submit" value="Найти">
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

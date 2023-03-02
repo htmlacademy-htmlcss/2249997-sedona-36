@@ -54,43 +54,80 @@
           </li>
         </ol>
         <form class="filter-hotels" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="filter-category-infrastructure">
+          <fieldset class="filter-category infrastructure">
             <legend>Инфраструктура:</legend>
-              <ul class="infrastructure-list">
+              <ul class="filter-category-list infrastructure-list">
                 <li class="infrastructure-item">
-                  <input type="checkbox" id ="pool" name="pool" checked>
-               <label for="pool">Бассейн</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
+                  </label>
                 </li>
                 <li class="infrastructure-item">
-                  <input type="checkbox" id="parking" name="parking" checked>
-               <label for="parking">Парковка</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
+                  </label>
                 </li>
                 <li class="infrastructure-item">
-                  <input type="checkbox" id="wi-fi" name="wi-fi">
-               <label for="wi-fi">Wi-Fi</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
+                  </label>
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="filter-category-type-of-housing">
-            <legend>Тип жилья::</legend>
-              <ul class="type-of-housing-list">
+          <fieldset class="filter-category type-of-housing">
+            <legend>Тип жилья:</legend>
+              <ul class="filter-category-list type-of-housing-list">
                 <li class="type-of-housing-list-item">
-                  <input type="radio" name="type-of-housing-filter" id="hotel" value="Hotel" checked>
-                  <label for="hotel">Гостиница</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing-filter" value="Hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
+                  </label>
                 </li>
                 <li class="type-of-housing-list-item">
-                  <input type="radio" name="type-of-housing-filter" id="motel" value="Motel">
-                  <label for="motel">Мотель</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing-filter" value="Motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
+                  </label>
                 </li>
                 <li class="type-of-housing-list-item">
-                  <input type="radio" name="type-of-housing-filter" id="apartments" value="Apartments">
-                  <label for="apartments">Апартаменты</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing-filter" value="Apartments">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
+                  </label>
                 </li>
               </ul>
           </fieldset>
           <fieldset class="filter-category-price-range">
-            <legend>Стоимость, ₽::</legend>
-            <input type="range" step="10" min="0" max="9000">
+            <legend>Стоимость, ₽:</legend>
+            <div class="range">
+              <div class="range-wrapper-inputs">
+                <label class="price-range-label">
+                 <input type="number" value="0"><span>от</span>
+                </label>
+                <label class="price-range-label">
+                   <input type="number" value="9000"><span>до</span>
+                 </label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 190px;">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </fieldset>
           <div class="filter-category-buttons">
           <button class="filter-submit-button blue-button" type="submit">Применить</button>
@@ -390,11 +427,6 @@
             </div>
           </li>
         </ul>
-        <div class="devide-line-style">
-          <svg class="devide-line" xmlns="http://www.w3.org/2000/svg" width="1060" height="1" fill="none" viewBox="0 0 1060 1">
-            <path stroke="#E6E6E6" d="M1060 .5H0"/>
-          </svg>
-        </div>
           <ol class="pagination-list">
             <li class="pagination-item pagination-current">
               <a class="pagination-item-link-current">1</a>
