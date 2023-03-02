@@ -1380,6 +1380,17 @@ position: absolute;
   padding-left: 22px;
   padding-top: 15px;
 }
+.children-info-popover::before {
+  content: "";
+  background-image: url("../images/index/popover-rectangle.svg");
+  width: 19px;
+  height: 9px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -9px;
+  left: 118px;
+}
 /* НА гридах */
 /* .modal-hotel-search-form {
   display: grid;
