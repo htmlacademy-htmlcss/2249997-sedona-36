@@ -202,6 +202,7 @@ button {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .hero-logo-text {
@@ -209,11 +210,21 @@ button {
   margin-top: 51px;
   margin-bottom: 82px;
 }
-.hero-arrow {
+/* .hero-arrow {
   display:block;
-
+} */
+.hero::after {
+  content: "";
+  background-image: url("../images/index/hero-arow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 57px;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
-
 .advantages-title-1 {
   font-size: 30px;
   line-height: 36px;
@@ -1439,7 +1450,7 @@ position: absolute;
   color: #FFFFFF4D;
 }
 .modal-container {
-  display: block;
+  display: none;
 }
 .input-label input[type="number"]::-webkit-outer-spin-button,
 .input-label input[type="number"]::-webkit-inner-spin-button {
