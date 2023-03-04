@@ -1462,6 +1462,22 @@ position: absolute;
   right: 0;
   padding: 17px 13px;
 }
+.modal-icons:hover path {
+ fill: black;
+ fill-opacity:.9;
+}
+.modal-icons:focus path {
+  fill: black;
+  fill-opacity:.9;
+ }
+ .modal-icons:focus {
+  outline: solid 3px #82B3D3;
+  border-radius: 4px;
+ }
+ .modal-icons:active path {
+  fill: #756157;
+  fill-opacity:.3;
+ }
 /* НА гридах */
 /* .modal-hotel-search-form {
   display: grid;
