@@ -1293,6 +1293,7 @@ button {
   border: none;
   border-radius: 4px;
   margin-bottom: 48px;
+  position: relative;
 }
 
 .modal-hotel-search-form input[type="submit"] {
@@ -1362,6 +1363,9 @@ button {
 }
 .error-info {
   color: #FF5757;
+}
+.adults {
+  position: relative;
 }
 .children {
   position: relative;
@@ -1441,6 +1445,22 @@ position: absolute;
 .input-label input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+.icon-minus {
+  position: absolute;
+  z-index: 1;
+  top:2px;
+  right: 70px;
+  cursor: pointer;
+  padding: 23px 13px;
+}
+.icon-plus {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  top:1px;
+  right: 0;
+  padding: 17px 13px;
 }
 /* НА гридах */
 /* .modal-hotel-search-form {
