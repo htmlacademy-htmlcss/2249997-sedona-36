@@ -1437,6 +1437,11 @@ position: absolute;
 .modal-container {
   display: block;
 }
+.input-label input[type="number"]::-webkit-outer-spin-button,
+.input-label input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
 /* НА гридах */
 /* .modal-hotel-search-form {
   display: grid;
