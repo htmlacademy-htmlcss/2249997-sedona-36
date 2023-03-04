@@ -287,13 +287,45 @@ button {
   padding-top: 113px;
   padding-bottom: 112px;
 }
-.facilities {
-  padding-top: 81px;
-  padding-bottom: 81px;
-}
 
+.facilities {
+  padding-top: 183px;
+  padding-bottom: 81px;
+  position: relative;
+}
+.icon-house {
+  background-image: url("../images/index/index-advantages-icon-house.svg");
+  width: 75px;
+  height: 72px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:81px;
+  left: 163px;
+}
+.icon-burger {
+  background-image: url("../images/index/index-advantages-icon-burger.svg");
+  width: 75px;
+  height: 72px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:82px;
+  left: 163px;
+}
+.icon-box {
+  background-image: url("../images/index/index-advantages-icon-box.svg");
+  width: 75px;
+  height: 72px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:79px;
+  left: 168px;
+
+}
 .advantages-text h3 {
   padding-bottom: 60px;
+}
+.simple h3 {
+  padding-bottom: 62px;
 }
 .devide-line {
   display: block;
