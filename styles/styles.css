@@ -1316,7 +1316,7 @@ button {
   text-align: left;
   vertical-align: middle;
 }
-.modal-hotel-search-form input[type="date"] {
+.modal-hotel-search-form input[type="text"] {
   font:inherit;
   font-size: 18px;
   line-height: 24px;
@@ -1418,7 +1418,7 @@ position: absolute;
   color: #FFFFFF4D;
 }
 .modal-container {
-  display: none;
+  display: block;
 }
 /* НА гридах */
 /* .modal-hotel-search-form {
