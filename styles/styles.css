@@ -905,7 +905,6 @@ button {
 
 .filter-category-price-range input[type="number"] {
   padding: 12px 20px;
-  padding-right: auto;
   font: inherit;
   font-size: 18px;
   border: solid 3px transparent;
@@ -1515,7 +1514,7 @@ position: absolute;
   color: #FFFFFF4D;
 }
 .modal-container {
-  display: ;
+  display: none;
   z-index: 3;
 }
 .input-label input[type="number"]::-webkit-outer-spin-button,
