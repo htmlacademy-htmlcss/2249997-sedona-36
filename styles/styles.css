@@ -304,8 +304,8 @@ button {
 }
 .icon-burger {
   background-image: url("../images/index/index-advantages-icon-burger.svg");
-  width: 75px;
-  height: 72px;
+  width: 74px;
+  height: 70px;
   background-repeat: no-repeat;
   position: absolute;
   top:82px;
@@ -313,8 +313,8 @@ button {
 }
 .icon-box {
   background-image: url("../images/index/index-advantages-icon-box.svg");
-  width: 75px;
-  height: 72px;
+  width: 64px;
+  height: 76px;
   background-repeat: no-repeat;
   position: absolute;
   top:79px;
@@ -599,6 +599,7 @@ button {
   color: black;
   display: block;
   padding: 5px 195px;
+  padding-right: 232px;
 }
 .phone {
   margin-top: 40px;
