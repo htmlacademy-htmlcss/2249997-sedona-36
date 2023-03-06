@@ -158,7 +158,6 @@ button {
   text-decoration: none;
   padding: 20px 16px;
   display: block;
-
 }
 .navigation-list-right .navigation-link-sign-in {
   display: inline-block;
@@ -1325,13 +1324,17 @@ button {
   position: relative;
   margin: auto;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 30px;
   width: 717px;
 
 }
 .modal-content {
   padding: 64px 70px;
   width: 577px;
+}
+.modal-content h2 {
+  font-size: 30px;
+  line-height: 36px;
 }
 .modal-close-button {
   position: absolute;
@@ -1359,7 +1362,7 @@ button {
   justify-content: space-between;
 }
 .input-label .label-name {
-  width: 137px;
+  width: 126px;
   display: inline-block;
   padding-top:12px;
   padding-bottom:12px;
@@ -1370,13 +1373,15 @@ button {
   display: inline-block;
   padding-top:12px;
   padding-bottom:12px;
+  padding-left: 2px;
 }
 .modal-number-container input[type="number"] {
   width: 110px;
+  height: 48px;
   display: inline-block;
   box-sizing: border-box;
   padding-left: 50px;
-  padding-top:14px;
+  padding-top:16px;
   padding-bottom:14px;
   font: inherit;
   font-size: 18px;
@@ -1418,9 +1423,10 @@ button {
   box-sizing: border-box;
   padding-top:12px;
   padding-bottom:12px;
-  padding-left: 20px;
+  padding-left: 22px;
   padding-right: 22px;
   margin-bottom: 4px;
+  margin-left: 4px;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
@@ -1455,11 +1461,15 @@ button {
 .error-info {
   color: #FF5757;
 }
+.availability-info {
+  margin-bottom: 21px;
+}
 .adults {
   position: relative;
 }
 .children {
   position: relative;
+
 }
 .children-info::after {
 position: absolute;
@@ -1481,7 +1491,7 @@ position: absolute;
   width: 256px;
   border-radius: 10px;
   left: -56px;
-  top:56px;
+  top:55px;
   opacity: 0;
   transition: 1s;
   font-size: 16px;
@@ -1491,7 +1501,8 @@ position: absolute;
   margin: 0;
   padding: 18px;
   padding-left: 22px;
-  padding-top: 15px;
+  padding-top: 19px;
+  padding-bottom: 24px;
   box-sizing: border-box;
 }
 .children-info-popover::before {
@@ -1529,7 +1540,7 @@ position: absolute;
   color: #FFFFFF4D;
 }
 .modal-container {
-  display: none;
+  /* display: none; */
   z-index: 3;
 }
 .input-label input[type="number"]::-webkit-outer-spin-button,
