@@ -639,13 +639,13 @@ button {
   margin-left: 70px;
   margin-right: 70px;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .catalog-hotels-display .catalog-hotels-text {
   margin: 0;
   padding: 0;
-
+  padding-top: 6px;
 }
 .catalog-hotels-filter-selector {
   width: 292px;
@@ -660,7 +660,7 @@ button {
   appearance: none;
   background-image: url("../images/catalog/catalog-filter-selector-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
 }
 .catalog-hotels-filter-selector:hover {
   border: solid 2px #68A2CA;
@@ -674,24 +674,25 @@ button {
 .catalog-hotels-filter-icons {
   min-width: 160px;
   margin-right: 70px;
-  margin-left: 70px;
+  margin-left: 73px;
+  margin-top: 2px;
 }
 .catalog-hotels-filter-icons a{
   display: inline-block;
   margin: 0;
-  padding: 22px 22px;
+  padding: 15px 14px;
   background-size: 14px 16px;
-  border: solid 2px #E5E5E5;
+  outline: solid 2px #E5E5E5;
   border-radius: 4px;
 }
 .catalog-hotels-filter-icons a:hover {
-  border: solid 2px #000000;
+  outline: solid 2px #000000;
 }
 .catalog-hotels-filter-icons a:focus {
-  border: solid 2px #68A2CA;
+  outline: solid 2px #68A2CA;
 }
 .catalog-hotels-filter-icons a:active {
-  border: solid 2px #000000;
+  outline: solid 2px #000000;
 }
 .catalog-hotels-filter-icons a:not(:first-of-type){
   margin-left: 8px;
@@ -701,19 +702,29 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  height: 14px;
+  width: 16px;
+  background-size: auto;
 }
 .catalog-hotels-filter-icons a:nth-of-type(2) {
   background-image: url("../images/catalog/catalog-sorting-icon-slides.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center ;
+  height: 14px;
+  width: 16px;
+  background-size: auto;
+
 }
 .catalog-hotels-filter-icons a:nth-of-type(3) {
   background-image: url("../images/catalog/catalog-sorting-icon-list.svg");
   background-repeat: no-repeat;
   background-position: center;
+  height: 14px;
+  width: 16px;
+  background-size: auto;
 }
 .catalog-hotels-filter-icons .current-button {
-  border: solid 2px #000000;
+  outline: solid 2px #000000;
 }
 .catalog-filter {
   background-color: burlywood;
@@ -823,8 +834,8 @@ button {
 }
 .control-mark {
   position: absolute;
-  top:0;
-  left: 0;
+  top:2px;
+  left: 1px;
   width: 20px;
   height: 20px;
   background-color: white;
@@ -835,13 +846,13 @@ button {
 .control-input[type="checkbox"]:checked + .control-mark::after {
   content: "";
   background-image: url("../images/catalog/catalog-control-v.svg");
-  background-size:cover;
+  background-size:contain;
   background-repeat: no-repeat;
   width: 13px;
   height: 11px;
   position: absolute;
-  top:2px;
-  left:1px;
+  top:4px;
+  left:4px;
 }
 .control:focus .control-mark {
   outline: solid 3px #83B3D3;
@@ -859,8 +870,8 @@ button {
   content: "";
   border-radius: 50%;
   background-color: #3F5E72;
-  top:3px;
-  left:3px;
+  top:5px;
+  left:5px;
 }
 .filter-category-price-range {
   width: 291px;
@@ -896,7 +907,7 @@ button {
 }
 .toggle-max {
   top:-8px;
-  left: 187px;
+  left: 210px;
 }
 .range-wrapper-inputs {
   display: flex;
@@ -910,10 +921,11 @@ button {
   font: inherit;
   font-size: 18px;
   border: none;
-  width: 143px;
+  width: 144px;
   box-sizing: border-box;
   margin-bottom: 46px;
   appearance: textfield;
+  margin-top: 1px;
 }
 .filter-category-price-range input[type="number"]:focus {
   outline: solid 3px #83B3D3;
@@ -1013,12 +1025,13 @@ button {
   margin: 0 70px;
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 19px;
   padding-left: 0;
   padding-bottom: 40px;
   list-style: none;
   border-bottom: solid 1px #E6E6E6;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 .hotel-card {
   width: 340px;
@@ -1034,7 +1047,7 @@ button {
   display: block;
   padding: 20px 20px 16px;
 }
-.hotel-card-link {
+.hotel-card-link h3 {
   color: black;
   text-decoration: none;
   font-size: 24px;
@@ -1064,7 +1077,7 @@ button {
 .hotel-rating {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 20px;
+  padding: 0 20px 18px;
 }
 .hotel-rating-stars img {
   padding: 0;
