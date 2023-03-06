@@ -164,6 +164,15 @@ button {
   padding: 20px 16px;
   display: block;
 }
+.navigation-list-left a:hover {
+  color: gray;
+}
+.navigation-list-left a:focus {
+  outline: auto;
+}
+.navigation-list-left a:active {
+  color: #83B3D3;
+}
 .navigation-list-right .navigation-link-sign-in {
   display: inline-block;
   box-sizing: border-box;
@@ -993,6 +1002,7 @@ button {
   border-radius: 4px;
   margin-top: 56px;
   margin-bottom: 32px;
+  cursor: pointer;
 }
 .filter-hotels input[type="reset"] {
   text-transform: uppercase;
@@ -1004,6 +1014,16 @@ button {
   padding: 8px 57px;
   background:transparent;
   border: none;
+  color: white;
+  cursor: pointer;
+}
+.filter-hotels input[type="reset"]:hover {
+  color: red;
+}
+.filter-hotels input[type="reset"]:focus {
+  outline: auto;
+}
+.filter-hotels input[type="reset"]:active {
   color: white;
 }
 .catalog-hotels-text {
@@ -1263,7 +1283,9 @@ button {
 .brown-button:active {
   background-color: #756157;
   color: #FFFFFF4D
-
+}
+.brown-button:disabled {
+  opacity: .1;
 }
 .blue-button:hover {
   background-color: #68A2CA;
@@ -1274,6 +1296,9 @@ button {
 .blue-button:active {
   background-color: #82B3D3;
   color: #FFFFFF4D;
+}
+.blue-button:disabled {
+  opacity: .1;
 }
 .pagination-item-link:active {
   color: #FFFFFF4D;
@@ -1287,6 +1312,9 @@ button {
 .green-button:active {
   background-color:#7DB54F;
   color: #FFFFFF4D;
+}
+.green-button:disabled {
+  opacity: .1;
 }
 .newsletter-button:hover path {
   fill: #68A2CA;
