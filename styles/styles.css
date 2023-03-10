@@ -964,7 +964,10 @@ body {
   top:4px;
   left:4px;
 }
-.control:focus .control-mark {
+.infrastructure-item:focus .control-mark {
+  outline: solid 3px #83B3D3;
+}
+.type-of-housing-list-item:focus .control-mark {
   outline: solid 3px #83B3D3;
 }
 .control:active .control-mark {
