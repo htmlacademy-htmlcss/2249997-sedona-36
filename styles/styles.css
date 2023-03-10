@@ -1348,14 +1348,16 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 .pagination-item a {
   text-decoration: none;
   color: white;
-  margin: 12px auto;
+  margin: 0px auto;
   display: block;
   text-align: center;
+  padding: 12px 0px;
+  vertical-align: middle;
 }
 
 .pagination-current {
@@ -1363,7 +1365,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
   color: black;
 }
 .pagination-dotted  {
@@ -1377,7 +1379,7 @@ body {
 .pagination-current a {
   text-decoration: none;
   color: black;
-  margin: 12px auto;
+  margin: 0 auto;
 }
 .pagination-dotted a {
   text-decoration: none;
