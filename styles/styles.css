@@ -51,7 +51,7 @@ button {
 .navigation {
   display: flex;
   width: 1200px;
-  height: 64px;
+  min-height: 64px;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -123,7 +123,7 @@ button {
   position: absolute;
   background-color: #756257;
   height: 2px;
-  bottom: 8px;
+  bottom: -1px;
   right: 16px;
   left: 16px;
   content: "";
@@ -217,6 +217,7 @@ button {
 }
 .navigation-list-left .navigation-item:first-of-type {
   width: 169px;
+  height: 64px;
 }
 .navigation-list-left a:not(.navigation-link-logo) {
   font-size: 20px;
@@ -257,14 +258,13 @@ button {
   width: 160px;
 }
 .navigation-list-right .navigation-item:not(:nth-of-type(3)) {
-  padding: 23px 13px;
+  padding: 0px 13px;
 }
 
 .navigation-list-right .navigation-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .navigation-link-search {
   padding: 22px 12px;
