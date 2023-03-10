@@ -668,7 +668,7 @@ button {
   margin: 0 auto;
 }
 .footer-social {
-  width: 142px;
+  min-width: 142px;
   display: flex;
   margin-top: 45px;
   margin-left: 70px;
@@ -684,11 +684,11 @@ button {
   position: relative;
 }
 .footer-social-list .footer-social-item:nth-of-type(3) {
-  position: absolute;
-  top:12px;
-  left:96px;
+  margin-left: 3px;
 }
-
+.footer-social-list .footer-social-item {
+  margin-bottom: 3px;
+}
 .footer-social-item a {
   padding: 13px 12px;
 }
