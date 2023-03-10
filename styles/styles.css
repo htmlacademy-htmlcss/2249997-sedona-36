@@ -1464,6 +1464,7 @@ button {
 .modal-content {
   padding: 64px 70px;
   width: 577px;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
 }
 .modal-content h2 {
   font-size: 30px;
@@ -1674,7 +1675,7 @@ position: absolute;
 }
 .modal-container {
   display: none;
-  z-index: 3;
+  z-index: 5;
 }
 .input-label input[type="number"]::-webkit-outer-spin-button,
 .input-label input[type="number"]::-webkit-inner-spin-button {
@@ -1714,33 +1715,13 @@ position: absolute;
   fill: #756157;
   fill-opacity:.3;
  }
-/* НА гридах */
-/* .modal-hotel-search-form {
-  display: grid;
+.page-shadow {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+/* .modal-shadow {
   width: 577px;
-  grid-template-columns: 137px 198px 131px 111px;
-  grid-template-rows: repeat(4, auto);
-}
-.date-in {
-  grid-column: 2/-1;
-  grid-row: 1/2;
-}
-.date-out {
-  grid-column: 2/-1;
-  grid-row: 2/3;
-}
-.adults {
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-.children {
-  grid-column: 3/-1;
-  grid-row: 3/4;
-}
-.modal-hotel-search-form input[type="submit"] {
-  grid-column: 1/-1;
-  grid-row: 4/-1;
-}
-.input-label .label-name {
-  grid-column: 1/2;
+  margin: auto;
+
 } */
