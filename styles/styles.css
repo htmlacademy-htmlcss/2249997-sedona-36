@@ -41,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-button {
+.button {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
 }
@@ -440,7 +440,7 @@ button {
   position: absolute;
 }
 
-.blue-area .text-2 h3::after {
+.blue-area .text-2>h3::after {
   content: "";
   width: 60px;
   height: 2px;
