@@ -99,6 +99,9 @@ body {
 .navigation-list-right .navigation-item:nth-of-type(3) {
   width: 160px;
 }
+.navigation-list-right li:focus {
+  outline: auto;
+}
 .numbers-of-likes {
   width: 20px;
   height: 20px;
