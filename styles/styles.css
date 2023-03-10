@@ -679,9 +679,11 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-items: center;
   position: relative;
+  width: 250px;
 }
 .footer-social-list .footer-social-item:nth-of-type(3) {
   margin-left: 3px;
@@ -703,13 +705,14 @@ body {
   text-decoration: none;
   color: black;
   display: block;
-  padding: 5px 195px;
-  padding-right: 232px;
+  padding: 5px 0px;
+  width: 340px;
 }
 .phone {
   margin-top: 40px;
   margin-bottom: 30px;
-  margin-left: 41px;
+  margin-left: auto;
+  margin-right: 231px;
 }
 .html-academy-link {
   display: block;
@@ -839,7 +842,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 412px;
+  min-height: 412px;
   color: white;
 }
 .catalog-filter-title {
