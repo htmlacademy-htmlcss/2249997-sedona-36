@@ -967,7 +967,7 @@ body {
   top:4px;
   left:4px;
 }
-.infrastructure-item:focus .control-mark {
+.control-input:focus ~ .control-mark {
   outline: solid 3px #83B3D3;
 }
 .type-of-housing-list-item:focus .control-mark {
@@ -1684,7 +1684,7 @@ position: absolute;
   color: #FFFFFF4D;
 }
 .modal-container {
-  /* display: none; */
+  display: none;
   z-index: 5;
 }
 .input-label input[type="number"]::-webkit-outer-spin-button,
@@ -1697,7 +1697,6 @@ position: absolute;
 }
 .input-label input[type="number"] {
   -moz-appearance: textfield;
-
 }
 .icon-minus {
   position: absolute;
