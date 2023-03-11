@@ -270,11 +270,11 @@ body {
   align-items: center;
 }
 .navigation-link-search {
-  padding: 22px 12px;
+  padding: 32px 12px;
 }
 .navigation-link-like {
   display: flex;
-  padding: 23px 13px;
+  padding: 32px 13px;
 }
 .hero {
   background-color:aliceblue;
@@ -371,16 +371,18 @@ body {
   padding-bottom: 81px;
   position: relative;
 }
-.icon-house {
+.icon-house-h::before {
+  content: "";
   background-image: url("../images/index/index-advantages-icon-house.svg");
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
   position: absolute;
-  top:81px;
+  top:80px;
   left: 163px;
 }
-.icon-burger {
+.icon-burger-h::before {
+  content: "";
   background-image: url("../images/index/index-advantages-icon-burger.svg");
   width: 74px;
   height: 70px;
@@ -389,7 +391,8 @@ body {
   top:82px;
   left: 163px;
 }
-.icon-box {
+.icon-box-h::before {
+  content: "";
   background-image: url("../images/index/index-advantages-icon-box.svg");
   width: 64px;
   height: 76px;
@@ -967,7 +970,7 @@ body {
   top:4px;
   left:4px;
 }
-.infrastructure-item:focus .control-mark {
+.control-input:focus ~ .control-mark {
   outline: solid 3px #83B3D3;
 }
 .type-of-housing-list-item:focus .control-mark {
@@ -1691,7 +1694,12 @@ position: absolute;
 .input-label input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
+    -moz-appearance: none;
+          appearance: none;
   margin: 0;
+}
+.input-label input[type="number"] {
+  -moz-appearance: textfield;
 }
 .icon-minus {
   position: absolute;
