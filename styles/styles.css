@@ -41,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-button {
+.button {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
 }
@@ -98,6 +98,9 @@ button {
 }
 .navigation-list-right .navigation-item:nth-of-type(3) {
   width: 160px;
+}
+.navigation-list-right li:focus {
+  outline: auto;
 }
 .numbers-of-likes {
   width: 20px;
@@ -440,7 +443,7 @@ button {
   position: absolute;
 }
 
-.blue-area .text-2 h3::after {
+.blue-area .text-2>h3::after {
   content: "";
   width: 60px;
   height: 2px;
@@ -679,9 +682,11 @@ button {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-items: center;
   position: relative;
+  width: 250px;
 }
 .footer-social-list .footer-social-item:nth-of-type(3) {
   margin-left: 3px;
@@ -703,13 +708,14 @@ button {
   text-decoration: none;
   color: black;
   display: block;
-  padding: 5px 195px;
-  padding-right: 232px;
+  padding: 5px 0px;
+  width: 340px;
 }
 .phone {
   margin-top: 40px;
   margin-bottom: 30px;
-  margin-left: 41px;
+  margin-left: auto;
+  margin-right: 231px;
 }
 .html-academy-link {
   display: block;
@@ -839,7 +845,7 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 412px;
+  min-height: 412px;
   color: white;
 }
 .catalog-filter-title {
@@ -961,7 +967,10 @@ button {
   top:4px;
   left:4px;
 }
-.control:focus .control-mark {
+.infrastructure-item:focus .control-mark {
+  outline: solid 3px #83B3D3;
+}
+.type-of-housing-list-item:focus .control-mark {
   outline: solid 3px #83B3D3;
 }
 .control:active .control-mark {
@@ -1342,14 +1351,15 @@ button {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  vertical-align: center;
 }
 .pagination-item a {
   text-decoration: none;
   color: white;
-  margin: 12px auto;
+  margin: 0px auto;
   display: block;
   text-align: center;
+  padding: 12px 0px;
+  vertical-align: middle;
 }
 
 .pagination-current {
@@ -1357,7 +1367,7 @@ button {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
   color: black;
 }
 .pagination-dotted  {
@@ -1371,7 +1381,7 @@ button {
 .pagination-current a {
   text-decoration: none;
   color: black;
-  margin: 12px auto;
+  margin: 0 auto;
 }
 .pagination-dotted a {
   text-decoration: none;
