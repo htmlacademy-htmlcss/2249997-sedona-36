@@ -443,7 +443,7 @@ body {
   position: absolute;
 }
 
-.blue-area .text-2>h3::after {
+.blue-area h3.blue-area-h::after {
   content: "";
   width: 60px;
   height: 2px;
