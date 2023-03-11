@@ -1684,14 +1684,20 @@ position: absolute;
   color: #FFFFFF4D;
 }
 .modal-container {
-  display: none;
+  /* display: none; */
   z-index: 5;
 }
 .input-label input[type="number"]::-webkit-outer-spin-button,
 .input-label input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
+    -moz-appearance: none;
+          appearance: none;
   margin: 0;
+}
+.input-label input[type="number"] {
+  -moz-appearance: textfield;
+
 }
 .icon-minus {
   position: absolute;
